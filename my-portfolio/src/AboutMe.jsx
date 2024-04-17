@@ -43,7 +43,7 @@ function AboutMe() {
         <Typography
           variant="h6"
           gutterBottom
-          sx={{ color: "#52BE80", textAlign: "center" }}
+          sx={{ color: "#26A69A ", textAlign: "center" }}
         >
           Kyle Powis
         </Typography>
@@ -59,8 +59,8 @@ function AboutMe() {
             marginTop: "10px",
           }}
         >
-          <FontAwesomeIcon icon={faGithub} size="2x" color="#52BE80" />
-          <FontAwesomeIcon icon={faLinkedinIn} size="2x" color="#52BE80" />
+          <FontAwesomeIcon icon={faGithub} size="2x" color="#26A69A " />
+          <FontAwesomeIcon icon={faLinkedinIn} size="2x" color="#26A69A " />
         </Box>
       </Box>
     </Box>

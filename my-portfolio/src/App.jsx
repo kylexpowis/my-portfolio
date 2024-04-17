@@ -26,11 +26,11 @@ function App() {
               component="div"
               sx={{ fontSize: "0.9rem" }}
             >
-              <span style={{ color: "#52BE80" }}>{"<"}</span>
-              <span style={{ color: "#52BE80" }}>Kyle </span>
+              <span style={{ color: "#26A69A" }}>{"<"}</span>
+              <span style={{ color: "#26A69A" }}>Kyle </span>
               <span style={{ color: "white" }}>Powis</span>
-              <span style={{ color: "#52BE80" }}>/</span>
-              <span style={{ color: "#52BE80" }}>{">"}</span>
+              <span style={{ color: "#26A69A" }}>/</span>
+              <span style={{ color: "#26A69A" }}>{">"}</span>
             </Typography>
 
             <Box sx={{ flexGrow: 1 }} />
@@ -40,7 +40,7 @@ function App() {
                 color="inherit"
                 component={Link}
                 to="/"
-                sx={{ color: "#52BE80" }}
+                sx={{ color: "#26A69A" }}
               >
                 Home
               </Button>
@@ -48,7 +48,7 @@ function App() {
                 color="inherit"
                 component={Link}
                 to="/projects"
-                sx={{ color: "#52BE80" }}
+                sx={{ color: "#26A69A" }}
               >
                 Featured Projects
               </Button>
