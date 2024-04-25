@@ -9,13 +9,10 @@ const AboutMe = () => {
         fontFamily: "'IBM Plex Mono', monospace",
         color: "white",
         padding: "20px",
-        borderRadius: "25px",
-        backgroundColor: "#1f2937",
         display: "flex",
         alignItems: "center",
-        boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.4)",
-        width: "40vw",
-        height: "auto",
+        width: "auto",
+        height: "50vh",
       }}
     >
       <Typography variant="body1" sx={{ marginBottom: "10px" }}>

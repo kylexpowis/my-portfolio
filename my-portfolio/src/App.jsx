@@ -10,6 +10,7 @@ import Box from "@mui/material/Box";
 import "./App.css";
 import { ThemeProvider } from "@emotion/react";
 import theme from "./theme";
+import { Link as Scroll } from "react-scroll";
 
 function App() {
   return (
@@ -44,6 +45,17 @@ function App() {
               >
                 Home
               </Button>
+              <Button color="inherit" sx={{ color: "#26A69A" }}>
+                <Scroll
+                  to="aboutme"
+                  spy={true}
+                  href="/about"
+                  smooth={true}
+                  duration={500}
+                >
+                  About Me
+                </Scroll>
+              </Button>
               <Button
                 color="inherit"
                 component={Link}
@@ -51,6 +63,14 @@ function App() {
                 sx={{ color: "#26A69A" }}
               >
                 Featured Projects
+              </Button>
+              <Button
+                color="inherit"
+                component={Link}
+                to="/contact"
+                sx={{ color: "#26A69A" }}
+              >
+                Contact
               </Button>
             </Box>
           </Toolbar>

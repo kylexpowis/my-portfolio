@@ -6,30 +6,32 @@ import AboutMe from "./components/AboutMe";
 
 function Home() {
   return (
-    <Box
-      sx={{
-        display: "flex",
-        height: "100vh",
-        textAlign: "center",
-        paddingLeft: "100px",
-      }}
-    >
+    <>
       <Box
         sx={{
           display: "flex",
-          flexDirection: "column",
-          alignItems: "left",
-          justifyContent: "center",
           height: "100vh",
+          justifyContent: "center",
+          alignItems: "center",
           textAlign: "center",
-          marginRight: "20px",
         }}
       >
-        <Box>
-          <ProfileCard />
-        </Box>
-        <Box sx={{ paddingTop: "20px" }}>
-          <TechStack />
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            height: "100%",
+            textAlign: "center",
+          }}
+        >
+          <Box>
+            <ProfileCard />
+          </Box>
+          <Box sx={{ paddingTop: "30px" }}>
+            <TechStack />
+          </Box>
         </Box>
       </Box>
       <Box
@@ -39,12 +41,14 @@ function Home() {
           alignItems: "left",
           justifyContent: "center",
           height: "100vh",
-          textAlign: "center",
+          textAlign: "right",
         }}
       >
-        <AboutMe />
+        <div id="aboutme">
+          <AboutMe />
+        </div>
       </Box>
-    </Box>
+    </>
   );
 }
 
