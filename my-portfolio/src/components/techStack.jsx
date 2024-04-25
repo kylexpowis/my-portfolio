@@ -29,7 +29,7 @@ function TechStack() {
           flexDirection: "column",
           animation: `${glow} 2s infinite alternate`,
         }}
-        className='w-80 p-1 md;p-5'
+        className="w-80 p-3 md;p-5"
       >
         <Typography variant="h7" sx={{ marginBottom: "10px" }}>
           {" "}

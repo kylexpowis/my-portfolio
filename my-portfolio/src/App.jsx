@@ -1,5 +1,5 @@
-import * as React from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import React from "react";
+import { Routes, Route, Link, useLocation } from "react-router-dom";
 import Home from "./Home";
 import FeaturedProjects from "./featuredprojects";
 import AppBar from "@mui/material/AppBar";
@@ -13,6 +13,8 @@ import theme from "./theme";
 import { Link as Scroll } from "react-scroll";
 
 function App() {
+  const location = useLocation();
+
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
@@ -45,24 +47,26 @@ function App() {
               >
                 Home
               </Button>
-              <Button color="inherit" sx={{ color: "#26A69A" }}>
-                <Scroll
-                  to="aboutme"
-                  spy={true}
-                  href="/about"
-                  smooth={true}
-                  duration={500}
-                >
-                  About Me
-                </Scroll>
-              </Button>
+              {location.pathname !== "/projects" && ( // Only render About button if not on the Projects route
+                <Button color="inherit" sx={{ color: "#26A69A" }}>
+                  <Scroll
+                    to="aboutme"
+                    spy={true}
+                    href="/about"
+                    smooth={true}
+                    duration={500}
+                  >
+                    About
+                  </Scroll>
+                </Button>
+              )}
               <Button
                 color="inherit"
                 component={Link}
                 to="/projects"
                 sx={{ color: "#26A69A" }}
               >
-                Featured Projects
+                Projects
               </Button>
               <Button
                 color="inherit"

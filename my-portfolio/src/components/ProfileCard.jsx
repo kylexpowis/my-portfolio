@@ -9,7 +9,7 @@ import { Avatar } from "@mui/material";
 
 function ProfileCard() {
   return (
-    <div className="card">
+    <div className="card flex justify-center">
       <Box
         sx={{
           fontFamily: "'IBM Plex Mono', monospace",
@@ -20,7 +20,7 @@ function ProfileCard() {
           boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.4)",
           flexDirection: "column",
         }}
-        className="h-30 w-[100%] flex justify-center items-center p-5"
+        className="h-30 w-[100%] flex justify-center items-center p-5 md:w-[80%] "
       >
         <Avatar
           src={kaiImage}
