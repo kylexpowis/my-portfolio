@@ -1,11 +1,11 @@
 import * as React from "react";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import kaiImage from "../src/assets/kai.jpg";
+import kaiImage from "../assets/kai.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
-function AboutMe() {
+function ProfileCard() {
   return (
     <Box
       sx={{
@@ -17,8 +17,8 @@ function AboutMe() {
         display: "flex",
         alignItems: "center",
         boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.4)",
-        width: "70vw",
-        height: "70vh",
+        width: "30vw",
+        height: "auto",
         flexDirection: "column",
       }}
     >
@@ -59,12 +59,24 @@ function AboutMe() {
             marginTop: "10px",
           }}
         >
-          <FontAwesomeIcon icon={faGithub} size="2x" color="#26A69A " />
-          <FontAwesomeIcon icon={faLinkedinIn} size="2x" color="#26A69A " />
+          <a
+            href="https://github.com/kylexpowis"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faGithub} size="2x" color="#26A69A" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/kylepowis"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faLinkedinIn} size="2x" color="#26A69A" />
+          </a>
         </Box>
       </Box>
     </Box>
   );
 }
 
-export default AboutMe;
+export default ProfileCard;
