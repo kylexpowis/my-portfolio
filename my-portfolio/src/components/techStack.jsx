@@ -20,7 +20,6 @@ function TechStack() {
     <div className="card">
       <Box
         sx={{
-          fontFamily: "'IBM Plex Mono', monospace",
           color: "white",
           borderRadius: "25px",
           display: "flex",
@@ -39,6 +38,7 @@ function TechStack() {
           sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
         >
           <img
+            className="card"
             style={{
               height: "auto",
               width: "15%",
@@ -49,6 +49,7 @@ function TechStack() {
           />
 
           <img
+            className="card"
             style={{
               height: "auto",
               width: "15%",
@@ -59,6 +60,7 @@ function TechStack() {
           />
 
           <img
+            className="card"
             style={{
               height: "auto",
               width: "15%",
@@ -69,6 +71,7 @@ function TechStack() {
           />
 
           <img
+            className="card"
             style={{
               height: "auto",
               width: "15%",
@@ -79,6 +82,7 @@ function TechStack() {
           />
 
           <img
+            className="card"
             style={{
               height: "auto",
               width: "15%",

@@ -23,6 +23,7 @@ function ProfileCard() {
         className="h-30 w-[100%] flex justify-center items-center p-5 md:w-[80%] "
       >
         <Avatar
+          className="card"
           src={kaiImage}
           alt="Kai"
           style={{
@@ -43,6 +44,7 @@ function ProfileCard() {
             variant="h6"
             gutterBottom
             sx={{ color: "#26A69A ", textAlign: "center" }}
+            className="font-bold"
           >
             Kyle Powis
           </Typography>
@@ -62,6 +64,7 @@ function ProfileCard() {
               href="https://github.com/kylexpowis"
               target="_blank"
               rel="noopener noreferrer"
+              className="card"
             >
               <FontAwesomeIcon icon={faGithub} size="2x" color="#26A69A" />
             </a>
@@ -69,6 +72,7 @@ function ProfileCard() {
               href="https://www.linkedin.com/in/kylepowis"
               target="_blank"
               rel="noopener noreferrer"
+              className="card"
             >
               <FontAwesomeIcon icon={faLinkedinIn} size="2x" color="#26A69A" />
             </a>

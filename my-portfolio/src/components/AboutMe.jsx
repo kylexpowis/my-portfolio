@@ -19,7 +19,7 @@ const AboutMe = () => {
         Having discovered a deep-rooted passion for software development, I have
         used my experience during the Northcoders bootcamp to pivot my career
         into the industry. Coding allows me to harness my innate creativity and
-        technical aptitude honed from my music experience to master programming
+        technical aptitude honed from my music production experience to master programming
         languages and software development methodologies. My past work
         experience has given me exceptional people skills, allowing me to
         seamlessly adapt to various settings. I am eager to contribute my

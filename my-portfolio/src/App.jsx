@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Routes, Route, Link, useLocation } from "react-router-dom";
 import Home from "./Home";
 import FeaturedProjects from "./featuredprojects";
@@ -14,6 +14,13 @@ import { Link as Scroll } from "react-scroll";
 
 function App() {
   const location = useLocation();
+  const scrollRef = useRef(null);
+
+  const handleHomeClick = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <ThemeProvider theme={theme}>
@@ -41,13 +48,14 @@ function App() {
             <Box sx={{ display: "flex", justifyContent: "flex-end" }}>
               <Button
                 color="inherit"
-                component={Link}
                 to="/"
+                component={Link}
+                onClick={handleHomeClick}
                 sx={{ color: "#26A69A" }}
               >
                 Home
               </Button>
-              {location.pathname !== "/projects" && ( // Only render About button if not on the Projects route
+              {location.pathname !== "/projects" && (
                 <Button color="inherit" sx={{ color: "#26A69A" }}>
                   <Scroll
                     to="aboutme"
@@ -79,7 +87,7 @@ function App() {
             </Box>
           </Toolbar>
         </AppBar>
-        <div style={{ paddingTop: "64px" }}>
+        <div ref={scrollRef} style={{ paddingTop: "64px" }}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<FeaturedProjects />} />

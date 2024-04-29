@@ -1,10 +1,7 @@
-import { createTheme } from '@mui/material/styles';
+import { createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
-  typography: {
-    fontFamily: 'IBM Plex Mono, monospace',
-  },
-  
+  typography: {},
 });
 
 export default theme;
