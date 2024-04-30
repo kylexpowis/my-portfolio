@@ -35,7 +35,7 @@ function TechStack() {
           Tech Stack:{" "}
         </Typography>
         <Box
-          sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
+          sx={{ display: "flex", flexWrap: "nowrap", justifyContent: "center" }}
         >
           <img
             className="card"

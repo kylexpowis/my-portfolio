@@ -2,6 +2,7 @@ import React from "react";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import ContactMe from "./ContactMe";
+import kaidublin from "../assets/kaidublin.jpg";
 
 const AboutMe = () => {
   return (
@@ -16,6 +17,10 @@ const AboutMe = () => {
         minHeight: "100vh",
       }}
     >
+      <img
+        style={{ maxHeight: "50vh", borderRadius: "60px" }}
+        src={kaidublin}
+      ></img>
       <Box
         sx={{
           color: "white",

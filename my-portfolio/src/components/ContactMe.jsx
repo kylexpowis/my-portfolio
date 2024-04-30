@@ -1,6 +1,8 @@
 import * as React from "react";
 import { Box, Typography } from "@mui/material";
 import { keyframes } from "@emotion/react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 const glow = keyframes`
   0% {
@@ -14,12 +16,15 @@ const glow = keyframes`
   }
 `;
 
+const EnvelopeIcon = () => {
+  return <FontAwesomeIcon icon={faEnvelope} />;
+};
+
 const ContactMe = () => {
   return (
     <div
       className="card"
       style={{
-        display: "flex",
         justifyContent: "center",
         alignItems: "center",
       }}
@@ -39,6 +44,38 @@ const ContactMe = () => {
         <Typography variant="body1">
           Contact me on kylepowis@gmail.com
         </Typography>
+        <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              gap: "20px",
+              marginTop: "10px",
+            }}
+          >
+            <a
+              href="https://github.com/kylexpowis"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="card"
+            >
+              <FontAwesomeIcon icon={faGithub} size="2x" color="#26A69A" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/kylepowis"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="card"
+            >
+              <FontAwesomeIcon icon={faLinkedinIn} size="2x" color="#26A69A" />
+            </a>
+            <a
+              href="mailto:kylepowis@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="card"
+            >
+            </a>
+          </Box>
       </Box>
     </div>
   );
