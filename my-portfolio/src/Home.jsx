@@ -27,10 +27,10 @@ function Home() {
             textAlign: "center",
           }}
         >
-          <Box sx={{ marginTop: "-80px" }}>
+          <Box sx={{ marginTop: "-50px" }}>
             <ProfileCard />
           </Box>
-          <Box sx={{ paddingTop: "90px" }}>
+          <Box sx={{ paddingTop: "60px" }}>
             <TechStack />
           </Box>
         </Box>
