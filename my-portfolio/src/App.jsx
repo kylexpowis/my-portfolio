@@ -12,6 +12,7 @@ import { ThemeProvider } from "@emotion/react";
 import theme from "./theme";
 import { Link as Scroll } from "react-scroll";
 import AboutMe from "./components/AboutMe";
+import PairSniper from "./components/PairSniper";
 
 function App() {
   const location = useLocation();
@@ -29,7 +30,7 @@ function App() {
         <AppBar
           position="fixed"
           color="default"
-          style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
+          style={{ backgroundColor: "rgba(0, 0, 0, 1)" }}
         >
           <Toolbar>
             <Typography
@@ -56,19 +57,19 @@ function App() {
               >
                 Home
               </Button>
-              {location.pathname !== "/projects" && (
-                <Button color="inherit" sx={{ color: "#26A69A" }}>
-                  <Scroll
-                    to="aboutme"
-                    spy={true}
-                    href="/about"
-                    smooth={true}
-                    duration={500}
-                  >
-                    About
-                  </Scroll>
-                </Button>
-              )}
+
+              <Button color="inherit" sx={{ color: "#26A69A" }}>
+                <Scroll
+                  to="aboutme"
+                  spy={true}
+                  href="/about"
+                  smooth={true}
+                  duration={500}
+                >
+                  About
+                </Scroll>
+              </Button>
+
               <Button color="inherit" sx={{ color: "#26A69A" }}>
                 <Scroll
                   to="FeaturedProjects"
@@ -89,6 +90,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/aboutme" element={<AboutMe />} />
             <Route path="/projects" element={<FeaturedProjects />} />
+            <Route path="/PairSniper" element={<PairSniper />} />
           </Routes>
         </div>
       </div>

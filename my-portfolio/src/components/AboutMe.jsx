@@ -22,13 +22,27 @@ const AboutMe = () => {
           padding: "20px",
           display: "flex",
           alignItems: "center",
-          width: "auto",
+          width: "70%",
           height: "50vh",
           flexDirection: "column",
         }}
       >
-        <h1>About Me</h1>
-        <Typography variant="body1" sx={{ marginBottom: "10px" }}>
+        <Typography
+          variant="h4"
+          gutterBottom
+          sx={{
+            color: "#26A69A",
+            textAlign: "center",
+            fontWeight: "bold",
+            paddingBottom: "30px",
+          }}
+        >
+          About Me
+        </Typography>
+        <Typography
+          variant="body1"
+          sx={{ marginBottom: "10px", textAlign: "left" }}
+        >
           Having discovered a deep-rooted passion for software development, I
           have used my experience during the Northcoders bootcamp to pivot my
           career into the industry. Coding allows me to harness my innate
@@ -39,7 +53,7 @@ const AboutMe = () => {
           eager to contribute my diverse skill set, enthusiasm and adaptability
           to a thriving software development team.
         </Typography>
-        <Box sx={{ paddingTop: "130px", textAlign: "center", width: "70%" }}>
+        <Box sx={{ paddingTop: "50px", textAlign: "center", width: "70%" }}>
           <ContactMe />
         </Box>
       </Box>

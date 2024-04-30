@@ -2,6 +2,7 @@ import * as React from "react";
 import { Box, Typography, Chip, Container } from "@mui/material";
 import pairsniperlogo from "/pairsniperlogo.svg";
 import ncnewslogo from "/northcodersnewslogo.png";
+import { Link } from "react-router-dom";
 
 function FeaturedProjects() {
   return (
@@ -32,26 +33,27 @@ function FeaturedProjects() {
           sx={{
             width: "35vh",
             height: "fit-content",
-            minHeight: "520px",
-            maxHeight: "520px",
+            minHeight: "490px",
+            maxHeight: "490px",
             "@media (max-width: 600px)": {
               minHeight: "auto",
               maxHeight: "auto",
             },
           }}
         >
-          <img
-            className="card"
-            src={pairsniperlogo}
-            alt="pairsniperlogo"
-            style={{
-              height: "auto",
-              width: "30vh",
-              marginBottom: "10px",
-              flexGrow: "1",
-            }}
-          />
-          <Typography>Pair Sniper</Typography>
+          <Link to="/PairSniper">
+            <img
+              className="card"
+              src={pairsniperlogo}
+              alt="pairsniperlogo"
+              style={{
+                height: "auto",
+                width: "30vh",
+                marginBottom: "10px",
+                flexGrow: "1",
+              }}
+            />
+          </Link>
           <div
             className="flex justify-center flex-wrap"
             style={{
@@ -223,8 +225,8 @@ function FeaturedProjects() {
           sx={{
             width: "35vh",
             height: "fit-content",
-            minHeight: "520px",
-            maxHeight: "520px",
+            minHeight: "490px",
+            maxHeight: "490px",
             "@media (max-width: 600px)": {
               minHeight: "auto",
               maxHeight: "auto",
@@ -242,7 +244,6 @@ function FeaturedProjects() {
               flexGrow: "1",
             }}
           />
-          <Typography>NC News</Typography>
           <div
             className="flex justify-center flex-wrap"
             style={{
