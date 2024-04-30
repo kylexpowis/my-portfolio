@@ -12,9 +12,8 @@ function ProfileCard() {
     <div className="card flex justify-center">
       <Box
         sx={{
-          fontFamily: "'IBM Plex Mono', monospace",
           color: "white",
-          borderRadius: "25px",
+          borderRadius: "35px",
           display: "flex",
           alignItems: "center",
           boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.4)",
@@ -28,7 +27,7 @@ function ProfileCard() {
           alt="Kai"
           style={{
             height: "auto",
-            width: "23vh",
+            width: "30vh",
             boxShadow: "0px 4px 9px rgba(0, 0, 0, 0.4)",
           }}
         />
@@ -41,7 +40,7 @@ function ProfileCard() {
           }}
         >
           <Typography
-            variant="h6"
+            variant="h4"
             gutterBottom
             sx={{ color: "#26A69A ", textAlign: "center" }}
             className="font-bold"

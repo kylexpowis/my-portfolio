@@ -68,25 +68,21 @@ function App() {
                   </Scroll>
                 </Button>
               )}
-              <Button
-                color="inherit"
-                component={Link}
-                to="/projects"
-                sx={{ color: "#26A69A" }}
-              >
-                Projects
-              </Button>
-              <Button
-                color="inherit"
-                component={Link}
-                to="/contact"
-                sx={{ color: "#26A69A" }}
-              >
-                Contact
+              <Button color="inherit" sx={{ color: "#26A69A" }}>
+                <Scroll
+                  to="FeaturedProjects"
+                  spy={true}
+                  href="/projects"
+                  smooth={true}
+                  duration={500}
+                >
+                  Projects
+                </Scroll>
               </Button>
             </Box>
           </Toolbar>
         </AppBar>
+        <div className="background-gradient" />
         <div ref={scrollRef} style={{ paddingTop: "64px" }}>
           <Routes>
             <Route path="/" element={<Home />} />

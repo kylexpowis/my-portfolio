@@ -1,18 +1,30 @@
 import * as React from "react";
-import { Box, Typography, Chip } from "@mui/material";
+import { Box, Typography, Chip, Container } from "@mui/material";
 import pairsniperlogo from "../public/pairsniperlogo.svg";
 import ncnewslogo from "../public/northcodersnewslogo.png";
 
 function FeaturedProjects() {
   return (
-    <div style={{ padding: "20px", display: "flex", justifyContent: "center" }}>
-      <Box
+    <div
+      style={{
+        padding: "20px",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        width: "100%",
+        height: "100%",
+        minHeight: "100vh",
+      }}
+    >
+      <Container
+        width="xl"
+        flex
         sx={{
           display: "flex",
           gap: "20px",
           flexDirection: "row",
-          height: "100vh",
           flexWrap: "wrap",
+          justifyContent: "center",
         }}
       >
         <Box
@@ -20,6 +32,12 @@ function FeaturedProjects() {
           sx={{
             width: "35vh",
             height: "fit-content",
+            minHeight: "520px",
+            maxHeight: "520px",
+            "@media (max-width: 600px)": {
+              minHeight: "auto",
+              maxHeight: "auto",
+            },
           }}
         >
           <img
@@ -205,6 +223,12 @@ function FeaturedProjects() {
           sx={{
             width: "35vh",
             height: "fit-content",
+            minHeight: "520px",
+            maxHeight: "520px",
+            "@media (max-width: 600px)": {
+              minHeight: "auto",
+              maxHeight: "auto",
+            },
           }}
         >
           <img
@@ -333,7 +357,7 @@ function FeaturedProjects() {
             ></Chip>
           </div>
         </Box>
-      </Box>
+      </Container>
     </div>
   );
 }
