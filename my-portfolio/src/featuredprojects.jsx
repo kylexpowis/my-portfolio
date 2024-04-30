@@ -1,7 +1,7 @@
 import * as React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, Chip } from "@mui/material";
 import pairsniperlogo from "../public/pairsniperlogo.svg";
-import northcoderslogo from "../public/northcoderslogo.png";
+import ncnewslogo from "../public/northcodersnewslogo.png";
 
 function FeaturedProjects() {
   return (
@@ -42,42 +42,162 @@ function FeaturedProjects() {
               width: "100%",
             }}
           >
-            <div className="text-sm rounded-full border border-green-900 p-2 m-1">
-              Node
-            </div>
-            <div className="text-sm rounded-full border border-green-900 p-2 m-1">
-              React
-            </div>
-            <div className="text-sm rounded-full border border-green-900 p-2 m-1">
-              Express
-            </div>
-            <div className="text-sm rounded-full border border-green-900 p-2 m-1">
-              PostgreSQL
-            </div>
-            <div className="text-sm rounded-full border border-green-900 p-2 m-1">
-              Supabase
-            </div>
-            <div className="text-sm rounded-full border border-green-900 p-2 m-1">
-              Jest
-            </div>
-            <div className="text-sm rounded-full border border-green-900 p-2 m-1">
-              MUI
-            </div>
-            <div className="text-sm rounded-full border border-green-900 p-2 m-1">
-              Tailwind
-            </div>
-            <div className="text-sm rounded-full border border-green-900 p-2 m-1">
-              Render
-            </div>
-            <div className="text-sm rounded-full border border-green-900 p-2 m-1">
-              Vercel
-            </div>
-            <div className="text-sm rounded-full border border-green-900 p-2 m-1">
-              Figma
-            </div>
-            <div className="text-sm rounded-full border border-green-900 p-2 m-1">
-              Photoshop
-            </div>
+            <Chip
+              label="Node"
+              variant="outlined"
+              className="text-sm rounded-full p-2 m-1"
+              sx={{
+                "& .MuiChip-label": {
+                  color: "white",
+                },
+                "& .MuiChip-outlined": {
+                  borderColor: "green",
+                },
+              }}
+            ></Chip>
+            <Chip
+              label="React"
+              variant="outlined"
+              className="text-sm rounded-full p-2 m-1"
+              sx={{
+                "& .MuiChip-label": {
+                  color: "white",
+                },
+                "& .MuiChip-outlined": {
+                  borderColor: "green",
+                },
+              }}
+            ></Chip>
+            <Chip
+              label="Express"
+              variant="outlined"
+              className="text-sm rounded-full p-2 m-1"
+              sx={{
+                "& .MuiChip-label": {
+                  color: "white",
+                },
+                "& .MuiChip-outlined": {
+                  borderColor: "green",
+                },
+              }}
+            ></Chip>
+            <Chip
+              label="PostgreSQL"
+              variant="outlined"
+              className="text-sm rounded-full p-2 m-1"
+              sx={{
+                "& .MuiChip-label": {
+                  color: "white",
+                },
+                "& .MuiChip-outlined": {
+                  borderColor: "green",
+                },
+              }}
+            ></Chip>
+            <Chip
+              label="Supabase"
+              variant="outlined"
+              className="text-sm rounded-full p-2 m-1"
+              sx={{
+                "& .MuiChip-label": {
+                  color: "white",
+                },
+                "& .MuiChip-outlined": {
+                  borderColor: "green",
+                },
+              }}
+            ></Chip>
+            <Chip
+              label="Jest"
+              variant="outlined"
+              className="text-sm rounded-full p-2 m-1"
+              sx={{
+                "& .MuiChip-label": {
+                  color: "white",
+                },
+                "& .MuiChip-outlined": {
+                  borderColor: "green",
+                },
+              }}
+            ></Chip>
+            <Chip
+              label="MUI"
+              variant="outlined"
+              className="text-sm rounded-full p-2 m-1"
+              sx={{
+                "& .MuiChip-label": {
+                  color: "white",
+                },
+                "& .MuiChip-outlined": {
+                  borderColor: "green",
+                },
+              }}
+            ></Chip>
+            <Chip
+              label="Tailwind"
+              variant="outlined"
+              className="text-sm rounded-full p-2 m-1"
+              sx={{
+                "& .MuiChip-label": {
+                  color: "white",
+                },
+                "& .MuiChip-outlined": {
+                  borderColor: "green",
+                },
+              }}
+            ></Chip>
+            <Chip
+              label="Render"
+              variant="outlined"
+              className="text-sm rounded-full p-2 m-1"
+              sx={{
+                "& .MuiChip-label": {
+                  color: "white",
+                },
+                "& .MuiChip-outlined": {
+                  borderColor: "green",
+                },
+              }}
+            ></Chip>
+            <Chip
+              label="Vercel"
+              variant="outlined"
+              className="text-sm rounded-full p-2 m-1"
+              sx={{
+                "& .MuiChip-label": {
+                  color: "white",
+                },
+                "& .MuiChip-outlined": {
+                  borderColor: "green",
+                },
+              }}
+            ></Chip>
+            <Chip
+              label="Figma"
+              variant="outlined"
+              className="text-sm rounded-full p-2 m-1"
+              sx={{
+                "& .MuiChip-label": {
+                  color: "white",
+                },
+                "& .MuiChip-outlined": {
+                  borderColor: "green",
+                },
+              }}
+            ></Chip>
+            <Chip
+              label="Photoshop"
+              variant="outlined"
+              className="text-sm rounded-full p-2 m-1"
+              sx={{
+                "& .MuiChip-label": {
+                  color: "white",
+                },
+                "& .MuiChip-outlined": {
+                  borderColor: "green",
+                },
+              }}
+            ></Chip>
           </div>
         </Box>
         <Box
@@ -89,7 +209,7 @@ function FeaturedProjects() {
         >
           <img
             className="card"
-            src={northcoderslogo}
+            src={ncnewslogo}
             alt="ncnewslogo"
             style={{
               height: "auto",
@@ -107,30 +227,110 @@ function FeaturedProjects() {
               width: "100%",
             }}
           >
-            <div className="text-sm rounded-full border border-green-900 p-2 m-1">
-              Node
-            </div>
-            <div className="text-sm rounded-full border border-green-900 p-2 m-1">
-              React
-            </div>
-            <div className="text-sm rounded-full border border-green-900 p-2 m-1">
-              Express
-            </div>
-            <div className="text-sm rounded-full border border-green-900 p-2 m-1">
-              PostgreSQL
-            </div>
-            <div className="text-sm rounded-full border border-green-900 p-2 m-1">
-              Supabase
-            </div>
-            <div className="text-sm rounded-full border border-green-900 p-2 m-1">
-              Jest
-            </div>
-            <div className="text-sm rounded-full border border-green-900 p-2 m-1">
-              MUI
-            </div>
-            <div className="text-sm rounded-full border border-green-900 p-2 m-1">
-              Render
-            </div>
+            <Chip
+              label="Node"
+              variant="outlined"
+              className="text-sm rounded-full p-2 m-1"
+              sx={{
+                "& .MuiChip-label": {
+                  color: "white",
+                },
+                "& .MuiChip-outlined": {
+                  borderColor: "green",
+                },
+              }}
+            ></Chip>
+            <Chip
+              label="React"
+              variant="outlined"
+              className="text-sm rounded-full p-2 m-1"
+              sx={{
+                "& .MuiChip-label": {
+                  color: "white",
+                },
+                "& .MuiChip-outlined": {
+                  borderColor: "green",
+                },
+              }}
+            ></Chip>
+            <Chip
+              label="Express"
+              variant="outlined"
+              className="text-sm rounded-full p-2 m-1"
+              sx={{
+                "& .MuiChip-label": {
+                  color: "white",
+                },
+                "& .MuiChip-outlined": {
+                  borderColor: "green",
+                },
+              }}
+            ></Chip>
+            <Chip
+              label="PostgreSQL"
+              variant="outlined"
+              className="text-sm rounded-full p-2 m-1"
+              sx={{
+                "& .MuiChip-label": {
+                  color: "white",
+                },
+                "& .MuiChip-outlined": {
+                  borderColor: "green",
+                },
+              }}
+            ></Chip>
+            <Chip
+              label="Supabase"
+              variant="outlined"
+              className="text-sm rounded-full p-2 m-1"
+              sx={{
+                "& .MuiChip-label": {
+                  color: "white",
+                },
+                "& .MuiChip-outlined": {
+                  borderColor: "green",
+                },
+              }}
+            ></Chip>
+            <Chip
+              label="Jest"
+              variant="outlined"
+              className="text-sm rounded-full p-2 m-1"
+              sx={{
+                "& .MuiChip-label": {
+                  color: "white",
+                },
+                "& .MuiChip-outlined": {
+                  borderColor: "green",
+                },
+              }}
+            ></Chip>
+            <Chip
+              label="MUI"
+              variant="outlined"
+              className="text-sm rounded-full p-2 m-1"
+              sx={{
+                "& .MuiChip-label": {
+                  color: "white",
+                },
+                "& .MuiChip-outlined": {
+                  borderColor: "green",
+                },
+              }}
+            ></Chip>
+            <Chip
+              label="Render"
+              variant="outlined"
+              className="text-sm rounded-full p-2 m-1"
+              sx={{
+                "& .MuiChip-label": {
+                  color: "white",
+                },
+                "& .MuiChip-outlined": {
+                  borderColor: "green",
+                },
+              }}
+            ></Chip>
           </div>
         </Box>
       </Box>
