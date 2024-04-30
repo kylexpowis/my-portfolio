@@ -42,8 +42,7 @@ function ProfileCard() {
           <Typography
             variant="h4"
             gutterBottom
-            sx={{ color: "#26A69A ", textAlign: "center" }}
-            className="font-bold"
+            sx={{ color: "#26A69A ", textAlign: "center", fontWeight: "bold" }}
           >
             Kyle Powis
           </Typography>

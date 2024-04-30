@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Box, Typography, Chip, Container } from "@mui/material";
-import pairsniperlogo from "../public/pairsniperlogo.svg";
-import ncnewslogo from "../public/northcodersnewslogo.png";
+import pairsniperlogo from "/pairsniperlogo.svg";
+import ncnewslogo from "/northcodersnewslogo.png";
 
 function FeaturedProjects() {
   return (

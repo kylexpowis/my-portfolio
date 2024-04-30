@@ -3,8 +3,7 @@ import Box from "@mui/material/Box";
 import TechStack from "./components/TechStack";
 import ProfileCard from "./components/ProfileCard";
 import AboutMe from "./components/AboutMe";
-import ContactMe from "./components/ContactMe";
-import FeaturedProjects from "./featuredprojects";
+import FeaturedProjects from "./components/featuredprojects";
 
 function Home() {
   return (
@@ -49,7 +48,7 @@ function Home() {
         <div id="aboutme">
           <AboutMe />
         </div>
-        
+
         <Box
           sx={{
             display: "flex",

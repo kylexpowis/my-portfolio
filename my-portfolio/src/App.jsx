@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { Routes, Route, Link, useLocation } from "react-router-dom";
 import Home from "./Home";
-import FeaturedProjects from "./featuredprojects";
+import FeaturedProjects from "./components/featuredprojects";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
@@ -11,6 +11,7 @@ import "./App.css";
 import { ThemeProvider } from "@emotion/react";
 import theme from "./theme";
 import { Link as Scroll } from "react-scroll";
+import AboutMe from "./components/AboutMe";
 
 function App() {
   const location = useLocation();
@@ -86,6 +87,7 @@ function App() {
         <div ref={scrollRef} style={{ paddingTop: "64px" }}>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/aboutme" element={<AboutMe />} />
             <Route path="/projects" element={<FeaturedProjects />} />
           </Routes>
         </div>

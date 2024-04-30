@@ -1,7 +1,9 @@
 import { createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
-  typography: {},
+  typography: {
+    fontFamily: "Roboto, sans-serif",
+  },
 });
 
 export default theme;

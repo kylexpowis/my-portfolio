@@ -32,10 +32,9 @@ const ContactMe = () => {
           boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.4)",
           animation: `${glow} 2s infinite alternate`,
           width: "40%",
-          textAlign: "center",
-          padding: "20px",
+          
         }}
-        className="p-3"
+        className="w-60 p-3"
       >
         <Typography variant="body1">
           Contact me on kylepowis@gmail.com
