@@ -23,6 +23,7 @@ const EnvelopeIcon = () => {
 const ContactMe = () => {
   return (
     <Box
+      className="card"
       sx={{
         display: "flex",
         justifyContent: "center",
@@ -37,7 +38,6 @@ const ContactMe = () => {
           boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.4)",
           animation: `${glow} 2s infinite alternate`,
           width: "50%",
-          padding: "20px",
           maxWidth: "300px",
         }}
         className="w-60 p-3"
@@ -69,12 +69,6 @@ const ContactMe = () => {
           >
             <FontAwesomeIcon icon={faLinkedinIn} size="2x" color="#26A69A" />
           </a>
-          <a
-            href="mailto:kylepowis@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="card"
-          ></a>
         </Box>
       </Box>
     </Box>

@@ -18,7 +18,6 @@ function FeaturedProjects() {
       }}
     >
       <Container
-        width="xl"
         flex
         sx={{
           display: "flex",

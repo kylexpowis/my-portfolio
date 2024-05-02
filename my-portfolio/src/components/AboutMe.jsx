@@ -8,7 +8,6 @@ const AboutMe = () => {
   return (
     <div
       style={{
-        padding: "20px",
         justifyContent: "center",
         alignItems: "center",
         width: "100%",
@@ -34,6 +33,7 @@ const AboutMe = () => {
             md: "20vh",
             xs: "20vh",
             borderRadius: "60px",
+            marginTop: "20px",
           }}
           src={kaidublin}
           alt="Kaidublin"
@@ -52,13 +52,17 @@ const AboutMe = () => {
         >
           <Typography
             variant="body1"
-            sx={{ marginBottom: "10px", textAlign: "left", maxHeight: "30vh" }}
+            sx={{
+              textAlign: "left",
+              maxHeight: "30vh",
+              fontSize: { xs: "0.8rem", sm: "1rem", md: "1.2rem" },
+            }}
           >
             <Typography
               variant="h5"
               sx={{
                 color: "#26A69A",
-                textAlign: { xs: "center", md: "left" },
+                textAlign: { xs: "center", sm: "center", md: "left" },
                 fontWeight: "bold",
               }}
             >
@@ -80,7 +84,7 @@ const AboutMe = () => {
             textAlign: "center",
             width: "100%",
             alignItems: "center",
-            margin: "0 auto",
+            justifyContent: "center",
           }}
         >
           <ContactMe />
