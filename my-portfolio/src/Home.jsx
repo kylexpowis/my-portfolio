@@ -15,6 +15,7 @@ function Home() {
           justifyContent: "center",
           alignItems: "center",
           textAlign: "center",
+          flexDirection: { xs: "column", md: "row" },
         }}
       >
         <Box
@@ -25,6 +26,7 @@ function Home() {
             justifyContent: "center",
             height: "100%",
             textAlign: "center",
+            marginBottom: { xs: "20px", md: "0" },
           }}
         >
           <Box sx={{ marginTop: "-50px" }}>
@@ -43,6 +45,7 @@ function Home() {
           justifyContent: "center",
           height: "100%",
           textAlign: "right",
+          marginBottom: { xs: "20px", md: "0" },
         }}
       >
         <div id="aboutme">
@@ -57,6 +60,7 @@ function Home() {
             justifyContent: "center",
             height: "100%",
             textAlign: "center",
+            marginBottom: { xs: "20px", md: "0" },
           }}
         >
           <div id="FeaturedProjects">

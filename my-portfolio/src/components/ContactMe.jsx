@@ -22,11 +22,11 @@ const EnvelopeIcon = () => {
 
 const ContactMe = () => {
   return (
-    <div
-      className="card"
-      style={{
+    <Box
+      sx={{
+        display: "flex",
         justifyContent: "center",
-        alignItems: "center",
+        marginTop: "30px",
       }}
     >
       <Box
@@ -36,8 +36,9 @@ const ContactMe = () => {
           alignItems: "center",
           boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.4)",
           animation: `${glow} 2s infinite alternate`,
-          width: "40%",
-          
+          width: "50%",
+          padding: "20px",
+          maxWidth: "300px",
         }}
         className="w-60 p-3"
       >
@@ -45,39 +46,38 @@ const ContactMe = () => {
           Contact me on kylepowis@gmail.com
         </Typography>
         <Box
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-              gap: "20px",
-              marginTop: "10px",
-            }}
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            gap: "20px",
+            marginTop: "10px",
+          }}
+        >
+          <a
+            href="https://github.com/kylexpowis"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card"
           >
-            <a
-              href="https://github.com/kylexpowis"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="card"
-            >
-              <FontAwesomeIcon icon={faGithub} size="2x" color="#26A69A" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/kylepowis"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="card"
-            >
-              <FontAwesomeIcon icon={faLinkedinIn} size="2x" color="#26A69A" />
-            </a>
-            <a
-              href="mailto:kylepowis@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="card"
-            >
-            </a>
-          </Box>
+            <FontAwesomeIcon icon={faGithub} size="2x" color="#26A69A" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/kylepowis"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card"
+          >
+            <FontAwesomeIcon icon={faLinkedinIn} size="2x" color="#26A69A" />
+          </a>
+          <a
+            href="mailto:kylepowis@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card"
+          ></a>
+        </Box>
       </Box>
-    </div>
+    </Box>
   );
 };
 
