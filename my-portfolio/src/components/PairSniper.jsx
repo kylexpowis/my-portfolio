@@ -55,7 +55,7 @@ function PairSniper() {
             <FontAwesomeIcon
               icon={faChevronLeft}
               onClick={handlePrevClick}
-              style={{ marginRight: "25px", marginTop: "20px "}}
+              style={{ marginRight: "25px", marginTop: "20px " }}
             />
             <FontAwesomeIcon
               icon={faChevronRight}
@@ -99,7 +99,7 @@ function PairSniper() {
                 fontSize: { xs: "1rem", sm: "1rem", md: "1rem" },
               }}
             >
-              Project Summary:
+              Project Summary
             </Typography>
             PairSniper is a customised trading analytics platform that automates
             data aggregation from market exchanges. It visualises real-time data
@@ -134,7 +134,7 @@ function PairSniper() {
                   fontSize: { xs: "1rem", sm: "1rem", md: "1rem" },
                 }}
               >
-                Project Status / Outcome:
+                Project Status / Outcome
               </Typography>
               <Typography
                 sx={{
@@ -187,7 +187,7 @@ function PairSniper() {
                   fontSize: { xs: "1rem", sm: "1rem", md: "1rem" },
                 }}
               >
-                Languages:
+                Languages
               </Typography>
               <Typography
                 sx={{
@@ -207,7 +207,7 @@ function PairSniper() {
                   fontSize: { xs: "1rem", sm: "1rem", md: "1rem" },
                 }}
               >
-                Frameworks:
+                Frameworks
               </Typography>
 
               <Typography
@@ -235,7 +235,7 @@ function PairSniper() {
                     fontSize: { xs: "1rem", sm: "1rem", md: "1rem" },
                   }}
                 >
-                  Tools:
+                  Tools
                 </Typography>
                 <Typography
                   sx={{
@@ -379,6 +379,20 @@ function PairSniper() {
           }}
         >
           {/* Box to wrap collaborator data*/}
+          <div>
+            <Typography
+              variant="h5"
+              sx={{
+                color: "#26A69A",
+                textAlign: { xs: "center", sm: "center", md: "left" },
+                fontWeight: "bold",
+                fontSize: { xs: "1rem", sm: "1rem", md: "1rem" },
+                paddingBottom: "5px",
+              }}
+            >
+              Collaborators
+            </Typography>
+          </div>
           <Box
             sx={{
               display: "flex",
