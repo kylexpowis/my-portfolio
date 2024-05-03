@@ -7,6 +7,8 @@ import "../../src/styles.css";
 import psscreenshot from "/pairsniperscreenshot.jpeg";
 import Button from "@mui/material/Button";
 
+// I should potentially remove each box/section into its own file and import them all in, advice needed.
+
 function PairSniper() {
   return (
     <div className="flex justify-center">
@@ -36,7 +38,7 @@ function PairSniper() {
             alt="pair sniper screenshot"
           />
           <p style={{ textAlign: "center" }}>
-            Pair Sniper Demo:{" "}
+            Pair Sniper Demo Link:{" "}
             {
               <a href="http://www.psdemo.com" target="_blank">
                 <Button>Deploying Soon</Button>
