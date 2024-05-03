@@ -1,2 +1,3 @@
-# my-portfolio
-full stack dev portfolio
+My Portfolio
+Built with react + vite with tailwindCSS
+
