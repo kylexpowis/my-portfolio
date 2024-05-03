@@ -1,6 +1,6 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import TechStack from "./components/TechStack";
+import TechStack from "./components/techStack";
 import ProfileCard from "./components/ProfileCard";
 import AboutMe from "./components/AboutMe";
 import FeaturedProjects from "./components/featuredprojects";
