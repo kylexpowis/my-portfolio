@@ -9,6 +9,8 @@ import Button from "@mui/material/Button";
 
 // I should potentially remove each box/section into its own file and import them all in, advice needed.
 
+// Will refactor into tailwind
+
 function PairSniper() {
   return (
     <div className="flex justify-center">
@@ -68,8 +70,9 @@ function PairSniper() {
               variant="h5"
               sx={{
                 color: "#26A69A",
-                textAlign: { xs: "left", sm: "left", md: "left" },
+                textAlign: { xs: "center", sm: "center", md: "left" },
                 fontWeight: "bold",
+                fontSize: { xs: "1rem", sm: "1rem", md: "1rem" },
               }}
             >
               Project Summary:
@@ -162,19 +165,14 @@ function PairSniper() {
               >
                 Languages:
               </Typography>
-
               <Typography
                 sx={{
+                  color: "white",
                   fontSize: { xs: "0.8rem", sm: "0.8rem", md: "1rem" },
+                  textAlign: { xs: "center", sm: "center", md: "left" },
                 }}
               >
-                <Typography
-                  sx={{
-                    color: "white",
-                  }}
-                >
-                  Javascript, SQL
-                </Typography>
+                Javascript, SQL
               </Typography>
               <Typography
                 variant="h5"
@@ -191,47 +189,40 @@ function PairSniper() {
               <Typography
                 sx={{
                   fontSize: { xs: "0.8rem", sm: "0.8rem", md: "1rem" },
+                  textAlign: { xs: "center", sm: "center", md: "left" },
                 }}
               >
                 <Typography
                   sx={{
                     color: "white",
+                    fontSize: { xs: "0.9rem", sm: "0.9rem", md: "1rem" },
+                    textAlign: { xs: "center", sm: "center", md: "left" },
                   }}
                 >
                   React, Tailwind, Express, Node, Jest
                 </Typography>
-              </Typography>
-              <Typography
-                variant="h5"
-                sx={{
-                  color: "#26A69A",
-                  textAlign: { xs: "center", sm: "center", md: "left" },
-                  fontWeight: "bold",
-                  fontSize: { xs: "1rem", sm: "1rem", md: "1rem" },
-                }}
-              >
-                Tools:
-              </Typography>
 
-              <Typography
-                sx={{
-                  fontSize: { xs: "0.8rem", sm: "0.8rem", md: "1rem" },
-                }}
-              >
+                <Typography
+                  variant="h5"
+                  sx={{
+                    color: "#26A69A",
+                    textAlign: { xs: "center", sm: "center", md: "left" },
+                    fontWeight: "bold",
+                    fontSize: { xs: "1rem", sm: "1rem", md: "1rem" },
+                  }}
+                >
+                  Tools:
+                </Typography>
                 <Typography
                   sx={{
                     color: "white",
+                    fontSize: { xs: "0.9rem", sm: "0.9rem", md: "1rem" },
                   }}
                 >
                   Supabase, Vercel, Postgres, Render, Figma, Excalidraw,
                   Photoshop, Todoist
                 </Typography>
               </Typography>
-              <Typography
-                sx={{
-                  fontSize: { xs: "0.8rem", sm: "0.8rem", md: "1rem" },
-                }}
-              ></Typography>
             </div>
           </Box>
         </Box>
@@ -265,7 +256,7 @@ function PairSniper() {
                 Approach
               </Typography>
               <Typography
-                sx={{ fontSize: { xs: "0.8rem", sm: "0.8rem", md: "1rem" } }}
+                sx={{ fontSize: { xs: "0.9rem", sm: "0.9rem", md: "1rem" } }}
               >
                 <ul>
                   <li>
@@ -321,6 +312,7 @@ function PairSniper() {
               <Typography
                 sx={{
                   color: "white",
+                  fontSize: { xs: "0.9rem", sm: "0.9rem", md: "1rem" },
                 }}
               >
                 The client had a unique trading strategy which proved
@@ -341,6 +333,7 @@ function PairSniper() {
               <Typography
                 sx={{
                   color: "white",
+                  fontSize: { xs: "0.9rem", sm: "0.9rem", md: "1rem" },
                 }}
               >
                 There was a need for an automated system that could handle
@@ -348,6 +341,87 @@ function PairSniper() {
                 for effective trading strategy execution.
               </Typography>
             </div>
+          </Box>
+        </Box>
+
+        <Box
+          className="rounded-lg border-2 border-gray-700 p-5"
+          sx={{
+            width: { xs: "100%", sm: "100%", md: "100%" },
+            display: "flex",
+            height: "auto",
+            flexDirection: "column",
+            marginTop: { xs: "20px", sm: "20px", md: "20px" },
+          }}
+        >
+          {/* Box to wrap collaborator data*/}
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-between",
+              gap: "20px",
+            }}
+          >
+            <Box>
+              <Typography
+                sx={{
+                  color: "white",
+                  fontSize: { xs: "0.9rem", sm: "0.9rem", md: "1rem" },
+                  fontWeight: "bold",
+                }}
+              >
+                Mohammed Saabir Ahmed
+              </Typography>
+              <Typography
+                sx={{
+                  color: "white",
+                  fontSize: { xs: "0.9rem", sm: "0.9rem", md: "1rem" },
+                }}
+              >
+                Full Stack Developer
+              </Typography>
+            </Box>
+            <a
+              href="https://github.com/ProdiGeeZ"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="card"
+            >
+              <FontAwesomeIcon icon={faGithub} size="2x" color="#26A69A" />
+            </a>
+
+            <Box>
+              <Typography
+                sx={{
+                  color: "white",
+                  fontSize: { xs: "0.8rem", sm: "0.8rem", md: "1rem" },
+                  fontWeight: "bold",
+                }}
+              >
+                Ima Khan
+              </Typography>
+              <Typography
+                sx={{
+                  color: "white",
+                  fontSize: { xs: "0.8rem", sm: "0.8rem", md: "1rem" },
+                }}
+              >
+                Full Stack Developer
+              </Typography>
+            </Box>
+
+            <a
+              href="https://github.com/imaa04"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="card"
+              style={{
+                marginLeft: "-20px",
+              }}
+            >
+              <FontAwesomeIcon icon={faGithub} size="2x" color="#26A69A" />
+            </a>
           </Box>
         </Box>
       </Box>

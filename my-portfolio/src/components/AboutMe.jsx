@@ -55,7 +55,7 @@ const AboutMe = () => {
             sx={{
               textAlign: "left",
               maxHeight: "30vh",
-              fontSize: { xs: "0.8rem", sm: "1rem", md: "1.2rem" },
+              fontSize: { xs: "0.8rem", sm: "1rem", md: "1rem" },
             }}
           >
             <Typography

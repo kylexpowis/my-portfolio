@@ -28,8 +28,9 @@ function FeaturedProjects() {
         }}
       >
         <Box
-          className="rounded-lg border-2 border-gray-700 p-5"
+          className="rounded-lg p-5"
           sx={{
+            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.8)",
             width: "35vh",
             height: "fit-content",
             minHeight: "490px",
@@ -220,8 +221,9 @@ function FeaturedProjects() {
           </div>
         </Box>
         <Box
-          className="rounded-lg border-2 border-gray-700 p-5"
+          className="rounded-lg  p-5"
           sx={{
+            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.8)",
             width: "35vh",
             height: "fit-content",
             minHeight: "490px",
