@@ -2,16 +2,27 @@ import * as React from "react";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import "../../src/styles.css";
-import psscreenshot from "/pairsniperscreenshot.jpeg";
+import psscreenshot from "/pairsniperhomescreen.png";
+import scvscreenshot from "/singlecoinviewscreen.png";
 import Button from "@mui/material/Button";
-
-// I should potentially remove each box/section into its own file and import them all in, advice needed.
-
-// Will refactor into tailwind
+import {
+  faChevronLeft,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
 
 function PairSniper() {
+  const [currentImage, setCurrentImage] = React.useState(psscreenshot);
+
+  const handlePrevClick = () => {
+    setCurrentImage(psscreenshot);
+  };
+
+  const handleNextClick = () => {
+    setCurrentImage(scvscreenshot);
+  };
+
   return (
     <div className="flex justify-center">
       <Box
@@ -29,6 +40,7 @@ function PairSniper() {
             display: "flex",
             flexDirection: "column",
             paddingTop: "10px",
+            alignItems: "center",
           }}
         >
           <img
@@ -36,10 +48,22 @@ function PairSniper() {
               md: "20vh",
               xs: "20vh",
             }}
-            src={psscreenshot}
-            alt="pair sniper screenshot"
+            src={currentImage}
+            alt="screenshot"
           />
-          <p style={{ textAlign: "center" }}>
+          <div>
+            <FontAwesomeIcon
+              icon={faChevronLeft}
+              onClick={handlePrevClick}
+              style={{ marginRight: "25px", marginTop: "20px "}}
+            />
+            <FontAwesomeIcon
+              icon={faChevronRight}
+              onClick={handleNextClick}
+              style={{ marginLeft: "25px", marginTop: "20px" }}
+            />
+          </div>
+          <p style={{ textAlign: "center", marginTop: "20px" }}>
             Pair Sniper Demo Link:{" "}
             {
               <a href="http://www.psdemo.com" target="_blank">

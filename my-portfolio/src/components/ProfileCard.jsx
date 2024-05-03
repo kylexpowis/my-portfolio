@@ -1,7 +1,6 @@
 import * as React from "react";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import kaiImage from "../assets/kai.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import "../../src/styles.css";
@@ -10,17 +9,23 @@ import kainq from "../assets/kainq.jpg";
 
 function ProfileCard() {
   return (
-    <div className="card flex justify-center">
+    <div className="flex justify-center">
       <Box
+        width={"100vw"}
         sx={{
           color: "white",
           borderRadius: "35px",
           display: "flex",
           alignItems: "center",
-          boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.4)",
+
           flexDirection: "column",
+          boxShadow: {
+            xs: "0px 2px 4px rgba(0, 0, 0, 0.8)",
+            sm: "none",
+            md: "none",
+          },
         }}
-        className="h-30 w-[100%] flex justify-center items-center p-5 md:w-[80%] "
+        className="h-30 flex justify-center items-center p-5 "
       >
         <Avatar
           className="card"
@@ -29,7 +34,7 @@ function ProfileCard() {
           style={{
             height: "auto",
             width: "30vh",
-            boxShadow: "0px 4px 9px rgba(0, 0, 0, 0.4)",
+            boxShadow: "0px 4px 9px rgba(0, 0, 0, 0.8)",
           }}
         />
         <Box

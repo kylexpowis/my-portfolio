@@ -57,23 +57,27 @@ function App() {
               >
                 Home
               </Button>
-
-              <Button color="inherit" sx={{ color: "#26A69A" }}>
-                <Scroll
-                  to="aboutme"
-                  spy={true}
-                  href="/about"
-                  smooth={true}
-                  duration={500}
+              {location.pathname !== "/projects" && (
+                <Button
+                  color="inherit"
+                  sx={{ color: "#26A69A", justifyContent: "flex-end" }}
                 >
-                  About
-                </Scroll>
-              </Button>
-
-              <Button color="inherit" sx={{ color: "#26A69A" }}>
+                  <Scroll
+                    to="aboutme"
+                    href="/about"
+                    smooth={true}
+                    duration={500}
+                  >
+                    About
+                  </Scroll>
+                </Button>
+              )}
+              <Button
+                color="inherit"
+                sx={{ color: "#26A69A", justifyContent: "flex-end" }}
+              >
                 <Scroll
                   to="FeaturedProjects"
-                  spy={true}
                   href="/projects"
                   smooth={true}
                   duration={500}
@@ -88,8 +92,8 @@ function App() {
         <div ref={scrollRef} style={{ paddingTop: "64px" }}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/aboutme" element={<AboutMe />} />
-            <Route path="/projects" element={<FeaturedProjects />} />
+            <Route path="/" element={<AboutMe />} />
+            <Route path="/" element={<FeaturedProjects />} />
             <Route path="/PairSniper" element={<PairSniper />} />
           </Routes>
         </div>

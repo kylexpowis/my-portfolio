@@ -245,6 +245,10 @@ function FeaturedProjects() {
               flexGrow: "1",
             }}
           />
+          <Typography sx={{ color: "yellow", marginBottom: "20px" }}>
+            {" "}
+            UNDER CONSTRUCTION{" "}
+          </Typography>
           <div
             className="flex justify-center flex-wrap"
             style={{
