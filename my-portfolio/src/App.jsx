@@ -90,8 +90,6 @@ function App() {
               )}
               <Button
                 color="inherit"
-                to="/cv"
-                component={Link}
                 sx={{ color: "#26A69A" }}
                 href={kylepowiscv}
                 rel="noopener noreferrer"
