@@ -101,11 +101,43 @@ function PairSniper() {
             >
               Project Summary
             </Typography>
-            PairSniper is a customised trading analytics platform that automates
+            PairSniper is a private customised trading analytics platform that automates
             data aggregation from market exchanges. It visualises real-time data
             to help users focus on strategy and capitalise on opportunities
             efficiently. Designed for scalability, it initially catered to a
             specific client's trading strategy.
+          </Typography>
+        </Box>
+        <Box
+          sx={{
+            color: "white",
+            padding: "20px",
+            display: "flex",
+            width: "100%",
+            height: "auto",
+            flexDirection: "column",
+          }}
+        >
+          <Typography
+            variant="body1"
+            sx={{
+              textAlign: "left",
+              maxHeight: "30vh",
+              fontSize: { xs: "0.8rem", sm: "0.8rem", md: "1rem" },
+            }}
+          >
+            <Typography
+              variant="h5"
+              sx={{
+                color: "#26A69A",
+                textAlign: { xs: "center", sm: "center", md: "left" },
+                fontWeight: "bold",
+                fontSize: { xs: "1rem", sm: "1rem", md: "1rem" },
+              }}
+            >
+              Role
+            </Typography>
+            Project Manager & Full Stack Developer
           </Typography>
         </Box>
         <Box
