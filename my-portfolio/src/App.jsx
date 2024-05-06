@@ -13,6 +13,7 @@ import theme from "./theme";
 import { Link as Scroll } from "react-scroll";
 import AboutMe from "./components/AboutMe";
 import PairSniper from "./components/PairSniper";
+import kylepowiscv from "/KYLEPOWISCV2024May.pdf";
 
 function App() {
   const location = useLocation();
@@ -57,33 +58,46 @@ function App() {
               >
                 Home
               </Button>
-              {location.pathname !== "/projects" && (
-                <Button
-                  color="inherit"
-                  sx={{ color: "#26A69A", justifyContent: "flex-end" }}
-                >
-                  <Scroll
-                    to="aboutme"
-                    href="/about"
-                    smooth={true}
-                    duration={500}
+              {location.pathname !== "/PairSniper" && (
+                <>
+                  <Button
+                    color="inherit"
+                    sx={{ color: "#26A69A", justifyContent: "flex-end" }}
                   >
-                    About
-                  </Scroll>
-                </Button>
+                    <Scroll
+                      to="aboutme"
+                      href="/about"
+                      smooth={true}
+                      duration={500}
+                    >
+                      About
+                    </Scroll>
+                  </Button>
+                  <Button
+                    color="inherit"
+                    sx={{ color: "#26A69A", justifyContent: "flex-end" }}
+                  >
+                    <Scroll
+                      to="FeaturedProjects"
+                      href="/projects"
+                      smooth={true}
+                      duration={500}
+                    >
+                      Projects
+                    </Scroll>
+                  </Button>
+                </>
               )}
               <Button
                 color="inherit"
-                sx={{ color: "#26A69A", justifyContent: "flex-end" }}
+                to="/cv"
+                component={Link}
+                sx={{ color: "#26A69A" }}
+                href={kylepowiscv}
+                rel="noopener noreferrer"
+                target="_blank"
               >
-                <Scroll
-                  to="FeaturedProjects"
-                  href="/projects"
-                  smooth={true}
-                  duration={500}
-                >
-                  Projects
-                </Scroll>
+                CV
               </Button>
             </Box>
           </Toolbar>
@@ -92,8 +106,8 @@ function App() {
         <div ref={scrollRef} style={{ paddingTop: "64px" }}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/" element={<AboutMe />} />
-            <Route path="/" element={<FeaturedProjects />} />
+            <Route path="/about" element={<AboutMe />} />
+            <Route path="/projects" element={<FeaturedProjects />} />
             <Route path="/PairSniper" element={<PairSniper />} />
           </Routes>
         </div>
