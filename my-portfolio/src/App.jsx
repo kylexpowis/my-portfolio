@@ -68,7 +68,7 @@ function App() {
                       to="aboutme"
                       href="/about"
                       smooth={true}
-                      duration={500}
+                      duration={800}
                     >
                       About
                     </Scroll>
@@ -81,7 +81,7 @@ function App() {
                       to="FeaturedProjects"
                       href="/projects"
                       smooth={true}
-                      duration={500}
+                      duration={800}
                     >
                       Projects
                     </Scroll>
