@@ -66,8 +66,8 @@ function PairSniper() {
           <p style={{ textAlign: "center", marginTop: "20px" }}>
             Pair Sniper Demo Link:{" "}
             {
-              <a href="http://www.psdemo.com" target="_blank">
-                <Button>Deploying Soon</Button>
+              <a href="https://fe-demo-data.vercel.app/" target="_blank">
+                <Button>CLICK HERE</Button>
               </a>
             }
           </p>
