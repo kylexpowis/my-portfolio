@@ -47,7 +47,7 @@ function Home() {
               <ProfileCard />
             </animated.div>
           </Box>
-          <Box sx={{ paddingTop: "60px" }}>
+          <Box sx={{ paddingTop: "30px" }}>
             <animated.div style={techStackAnimation}>
               <TechStack />
             </animated.div>
