@@ -53,7 +53,7 @@ function StolenSociety() {
             style={{
               width: "100%",
               height: "auto",
-              maxHeight: "60vh", // Adjust this as needed
+              maxHeight: "60vh",
             }}
             src={images[currentIndex]}
             alt="screenshot"
@@ -70,26 +70,22 @@ function StolenSociety() {
               style={{ marginLeft: "25px", marginTop: "20px" }}
             />
           </div>
-          <>
-            <p style={{ textAlign: "center", marginTop: "20px" }}>
-              Stolen Society Landing Page:{" "}
-              {
-                <a href="https://stolensociety.co.uk" target="_blank">
-                  <Button>stolensociety.co.uk</Button>
-                </a>
-              }
-            </p>
-          </>
-          <>
-            <p style={{ textAlign: "center", marginTop: "2px" }}>
-              Stolen Society Store:{" "}
-              {
-                <a href="https://store.stolensociety.co.uk" target="_blank">
-                  <Button>store.stolensociety.co.uk</Button>
-                </a>
-              }
-            </p>
-          </>
+          <p style={{ textAlign: "center", marginTop: "20px" }}>
+            Stolen Society Landing Page:{" "}
+            {
+              <a href="https://stolensociety.co.uk" target="_blank">
+                <Button>stolensociety.co.uk</Button>
+              </a>
+            }
+          </p>
+          <p style={{ textAlign: "center", marginTop: "2px" }}>
+            Stolen Society Store:{" "}
+            {
+              <a href="https://store.stolensociety.co.uk" target="_blank">
+                <Button>store.stolensociety.co.uk</Button>
+              </a>
+            }
+          </p>
         </Box>
         <Box
           sx={{
