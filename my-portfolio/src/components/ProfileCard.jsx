@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import "../../src/styles.css";
 import { Avatar } from "@mui/material";
+
 import kaibape from "../assets/kaibapeAIxpand.png";
 
 function ProfileCard() {

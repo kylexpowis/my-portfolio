@@ -30,10 +30,10 @@ function TechStack() {
         }}
         className="w-60 p-3"
       >
-        <Typography variant="h7" sx={{ marginBottom: "2px" }}>
+        {/* <Typography variant="h7" sx={{ marginBottom: "2px" }}>
           {" "}
           Tech Stack:{" "}
-        </Typography>
+        </Typography> */}
         <Box
           sx={{ display: "flex", flexWrap: "nowrap", justifyContent: "center" }}
         >
