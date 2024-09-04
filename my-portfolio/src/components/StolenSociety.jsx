@@ -53,7 +53,6 @@ function StolenSociety() {
             style={{
               width: "100%",
               height: "auto",
-              maxHeight: "60vh",
             }}
             src={images[currentIndex]}
             alt="screenshot"
