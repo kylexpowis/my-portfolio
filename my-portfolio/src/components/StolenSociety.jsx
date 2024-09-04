@@ -278,7 +278,7 @@ function StolenSociety() {
                     fontSize: { xs: "0.9rem", sm: "0.9rem", md: "1rem" },
                   }}
                 >
-                  Netlify (Deployment), Photoshop, Todoist
+                  Netlify (Deployment), GoDaddy, Photoshop, Todoist
                 </Typography>
               </Typography>
             </div>
@@ -324,6 +324,10 @@ function StolenSociety() {
                   </li>
 
                   <li>Use Mailchimp API to collect customer emails.</li>
+                  <li>
+                    Connect landing page and shopify store to same URL using
+                    subdomains within GoDaddy.
+                  </li>
                 </ul>
               </Typography>
             </div>
