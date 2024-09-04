@@ -117,7 +117,7 @@ function StolenSociety() {
             </Typography>
             This project is a basic shopify store for a clothing brand, however
             they wanted their main page to be seperate so they can remove the
-            store when and needed for limmited/exclusive drops.
+            store when and needed for limited/exclusive drops.
           </Typography>
         </Box>
         <Box
