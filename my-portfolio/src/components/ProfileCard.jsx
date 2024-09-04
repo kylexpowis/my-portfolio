@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import "../../src/styles.css";
 import { Avatar } from "@mui/material";
-import kainq from "../assets/kainq.jpg";
+import kaibape from "../assets/kaibapeAIxpand.png";
 
 function ProfileCard() {
   return (
@@ -29,7 +29,7 @@ function ProfileCard() {
       >
         <Avatar
           className="card"
-          src={kainq}
+          src={kaibape}
           alt="Kai"
           style={{
             height: "auto",
