@@ -1,11 +1,24 @@
-import React from "react";
 import Box from "@mui/material/Box";
 import TechStack from "./components/techStack";
 import ProfileCard from "./components/ProfileCard";
 import AboutMe from "./components/AboutMe";
 import FeaturedProjects from "./components/featuredprojects";
+import { useSpring, animated } from "@react-spring/web";
 
 function Home() {
+  const profileCardAnimation = useSpring({
+    from: { opacity: 0, transform: "translateY(-50px)" },
+    to: { opacity: 1, transform: "translateY(0)" },
+    config: { duration: 1000 },
+  });
+
+  const techStackAnimation = useSpring({
+    from: { opacity: 0, transform: "translateY(50px)" },
+    to: { opacity: 1, transform: "translateY(0)" },
+    config: { duration: 1000 },
+    delay: 300,
+  });
+
   return (
     <>
       <Box
@@ -30,10 +43,14 @@ function Home() {
           }}
         >
           <Box sx={{ marginTop: "-50px" }}>
-            <ProfileCard />
+            <animated.div style={profileCardAnimation}>
+              <ProfileCard />
+            </animated.div>
           </Box>
           <Box sx={{ paddingTop: "60px" }}>
-            <TechStack />
+            <animated.div style={techStackAnimation}>
+              <TechStack />
+            </animated.div>
           </Box>
         </Box>
       </Box>
