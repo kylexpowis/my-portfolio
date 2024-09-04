@@ -14,6 +14,7 @@ import { Link as Scroll } from "react-scroll";
 import AboutMe from "./components/AboutMe";
 import PairSniper from "./components/PairSniper";
 import kylepowiscv from "/KYLEPOWISCV2024May.pdf";
+import StolenSociety from "./components/StolenSociety";
 
 function App() {
   const location = useLocation();
@@ -107,6 +108,7 @@ function App() {
             <Route path="/about" element={<AboutMe />} />
             <Route path="/projects" element={<FeaturedProjects />} />
             <Route path="/PairSniper" element={<PairSniper />} />
+            <Route path="/Stolensociety" element={<StolenSociety />} />
           </Routes>
         </div>
       </div>
