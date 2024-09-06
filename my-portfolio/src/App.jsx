@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { Routes, Route, Link, useLocation } from "react-router-dom";
 import Home from "./Home";
 import FeaturedProjects from "./components/featuredprojects";

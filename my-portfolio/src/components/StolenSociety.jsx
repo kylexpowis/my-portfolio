@@ -51,8 +51,8 @@ function StolenSociety() {
         >
           <img
             style={{
-              width: "auto",
-              height: "80vh",
+              width: "80vh",
+              height: "auto",
             }}
             src={images[currentIndex]}
             alt="screenshot"

@@ -1,4 +1,4 @@
-import * as React from "react";
+// import * as React from "react";
 import { Box, Typography } from "@mui/material";
 import { keyframes } from "@emotion/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -16,9 +16,9 @@ const glow = keyframes`
   }
 `;
 
-const EnvelopeIcon = () => {
-  return <FontAwesomeIcon icon={faEnvelope} />;
-};
+// const EnvelopeIcon = () => {
+//   return <FontAwesomeIcon icon={faEnvelope} />;
+// };
 
 const ContactMe = () => {
   return (
