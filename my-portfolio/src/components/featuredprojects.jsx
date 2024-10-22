@@ -2,6 +2,7 @@ import { Box, Typography, Chip, Container } from "@mui/material";
 import pairsniperlogo from "/pairsniperlogo.svg";
 import stolensocietylogoportfolio from "/stolensocietylogoportfolio.png";
 import ncnewslogo from "/northcodersnewslogo.png";
+import clusterbookslogo from "/clusterbookslogo2.png";
 import { Link } from "react-router-dom";
 
 function FeaturedProjects() {
@@ -207,6 +208,165 @@ function FeaturedProjects() {
             ></Chip>
             <Chip
               label="Photoshop"
+              variant="outlined"
+              className="text-sm rounded-full p-2 m-1"
+              sx={{
+                "& .MuiChip-label": {
+                  color: "white",
+                },
+                "& .MuiChip-outlined": {
+                  borderColor: "green",
+                },
+              }}
+            ></Chip>
+          </div>
+        </Box>
+        <Box
+          className="rounded-lg p-5"
+          sx={{
+            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.8)",
+            width: "35vh",
+            height: "fit-content",
+            minHeight: "490px",
+            maxHeight: "490px",
+            "@media (max-width: 600px)": {
+              minHeight: "auto",
+              maxHeight: "auto",
+            },
+          }}
+        >
+          <Link
+            to="https://northcoders.com/project-phase/cluster-books"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              className="card"
+              alt="cluster books logo"
+              src={clusterbookslogo}
+              style={{
+                height: "auto",
+                width: "30vh",
+                marginBottom: "10px",
+                flexGrow: "1",
+              }}
+            />
+          </Link>
+          <div
+            className="flex justify-center flex-wrap"
+            style={{
+              flexWrap: "wrap",
+              justifyContent: "space-evenly",
+              width: "100%",
+            }}
+          >
+            <Chip
+              label="Node"
+              variant="outlined"
+              className="text-sm rounded-full p-2 m-1"
+              sx={{
+                "& .MuiChip-label": {
+                  color: "white",
+                },
+                "& .MuiChip-outlined": {
+                  borderColor: "green",
+                },
+              }}
+            ></Chip>
+            <Chip
+              label="React Native"
+              variant="outlined"
+              className="text-sm rounded-full p-2 m-1"
+              sx={{
+                "& .MuiChip-label": {
+                  color: "white",
+                },
+                "& .MuiChip-outlined": {
+                  borderColor: "green",
+                },
+              }}
+            ></Chip>
+            <Chip
+              label="Express"
+              variant="outlined"
+              className="text-sm rounded-full p-2 m-1"
+              sx={{
+                "& .MuiChip-label": {
+                  color: "white",
+                },
+                "& .MuiChip-outlined": {
+                  borderColor: "green",
+                },
+              }}
+            ></Chip>
+            <Chip
+              label="MongoDB"
+              variant="outlined"
+              className="text-sm rounded-full p-2 m-1"
+              sx={{
+                "& .MuiChip-label": {
+                  color: "white",
+                },
+                "& .MuiChip-outlined": {
+                  borderColor: "green",
+                },
+              }}
+            ></Chip>
+            <Chip
+              label="Mongoose"
+              variant="outlined"
+              className="text-sm rounded-full p-2 m-1"
+              sx={{
+                "& .MuiChip-label": {
+                  color: "white",
+                },
+                "& .MuiChip-outlined": {
+                  borderColor: "green",
+                },
+              }}
+            ></Chip>
+            <Chip
+              label="Websockets"
+              variant="outlined"
+              className="text-sm rounded-full p-2 m-1"
+              sx={{
+                "& .MuiChip-label": {
+                  color: "white",
+                },
+                "& .MuiChip-outlined": {
+                  borderColor: "green",
+                },
+              }}
+            ></Chip>
+
+            <Chip
+              label="Tailwind"
+              variant="outlined"
+              className="text-sm rounded-full p-2 m-1"
+              sx={{
+                "& .MuiChip-label": {
+                  color: "white",
+                },
+                "& .MuiChip-outlined": {
+                  borderColor: "green",
+                },
+              }}
+            ></Chip>
+            <Chip
+              label="Figma"
+              variant="outlined"
+              className="text-sm rounded-full p-2 m-1"
+              sx={{
+                "& .MuiChip-label": {
+                  color: "white",
+                },
+                "& .MuiChip-outlined": {
+                  borderColor: "green",
+                },
+              }}
+            ></Chip>
+            <Chip
+              label="Books API"
               variant="outlined"
               className="text-sm rounded-full p-2 m-1"
               sx={{
