@@ -61,9 +61,11 @@ const AboutMe = () => {
             <Typography
               variant="h5"
               sx={{
-                color: "#26A69A",
+                color: "#ffffff",
                 textAlign: { xs: "center", sm: "center", md: "left" },
                 fontWeight: "bold",
+                fontFamily:
+                  "'San Francisco', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', sans-serif",
               }}
             >
               About Me

@@ -1,4 +1,3 @@
-// import * as React from "react";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,17 +11,19 @@ function ProfileCard() {
   return (
     <div className="flex justify-center">
       <Box
-        width={"30vw"}
+        width={"20vw"}
+        height={"30vh"}
         sx={{
-          borderRadius: "35px",
+          borderRadius: "15px",
           display: "flex",
-          flexDirection: "column",
-          boxShadow: {
-            xs: "0px 2px 4px rgba(0, 0, 0, 0.8)",
-            sm: "none",
-            md: "none",
-          },
-          border: "4px solid grey", // Adds a grey border
+          justifyContent: "center",
+          alignItems: "center",
+          boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)", // Light shadow for depth
+          backdropFilter: "blur(10px)", // Frosted glass effect (blurred background)
+          padding: "20px",
+          color: "white",
+          background: "rgba(28,28,28, 0.1)", // Slight transparency (keep low for true glass effect)
+          overflow: "hidden",
         }}
         className="h-30 flex p-5"
       >
@@ -30,33 +31,46 @@ function ProfileCard() {
           className="card"
           src={kaibape}
           alt="Kai"
-          style={{
+          sx={{
             height: "auto",
             width: "20vh",
             boxShadow: "0px 4px 9px rgba(0, 0, 0, 0.8)",
+            borderRadius: "50%",
+            marginBottom: "60px",
           }}
         />
         <Box
           sx={{
             display: "flex",
             flexDirection: "column",
-            paddingTop: "10px",
+            textAlign: "right",
+            width: "100%",
           }}
         >
           <Typography
-            variant="h4"
+            variant="h5"
             gutterBottom
-            sx={{ color: "#ffffff", textAlign: "right", fontWeight: "bold" }}
+            
+            sx={{
+              color: "#ffffff",
+              fontWeight: "bold",
+              marginTop: "120px",
+              marginBottom: "5px",
+              fontFamily: "'San Francisco', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', sans-serif",
+            }}
           >
             Kyle Powis
           </Typography>
-          <Typography variant="body1" sx={{ textAlign: "right" }}>
+          <Typography
+            variant="body1"
+            sx={{ color: "rgba(255, 255, 255, 0.7)" }}
+          >
             Full Stack Developer
           </Typography>
           <Box
             sx={{
               display: "flex",
-              justifyContent: "center",
+              justifyContent: "right",
               gap: "20px",
               marginTop: "10px",
             }}
@@ -66,7 +80,6 @@ function ProfileCard() {
               target="_blank"
               rel="noopener noreferrer"
               className="card"
-              style={{ marginLeft: "auto" }}
             >
               <FontAwesomeIcon icon={faGithub} size="2x" color="#ffffff" />
             </a>

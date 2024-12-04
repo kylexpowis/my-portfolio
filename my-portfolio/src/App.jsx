@@ -32,7 +32,7 @@ function App() {
         <AppBar
           position="fixed"
           color="default"
-          style={{ backgroundColor: "rgba(0, 0, 0, 1)" }}
+          style={{ backgroundColor: "rgba(10, 10, 10, 1)" }}
         >
           <Toolbar>
             <Typography

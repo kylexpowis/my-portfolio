@@ -1,20 +1,7 @@
 // import * as React from "react";
 import { Box, Typography } from "@mui/material";
-import { keyframes } from "@emotion/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-
-const glow = keyframes`
-  0% {
-    box-shadow: 0 0 5px rgba(0, 255, 255, 0.2), 0 0 10px rgba(0, 255, 255, 0.2), 0 0 15px rgba(0, 255, 255, 0.2), 0 0 20px rgba(0, 255, 255, 0.2), 0 0 25px rgba(0, 255, 255, 0.2);
-  }
-  50% {
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2), 0 0 15px rgba(0, 255, 255, 0.2), 0 0 20px rgba(0, 255, 255, 0.2), 0 0 25px rgba(0, 255, 255, 0.2), 0 0 30px rgba(0, 255, 255, 0.2);
-  }
-  100% {
-    box-shadow: 0 0 5px rgba(0, 255, 255, 0.2), 0 0 10px rgba(0, 255, 255, 0.2), 0 0 15px rgba(0, 255, 255, 0.2), 0 0 20px rgba(0, 255, 255, 0.2), 0 0 25px rgba(0, 255, 255, 0.2);
-  }
-`;
 
 // const EnvelopeIcon = () => {
 //   return <FontAwesomeIcon icon={faEnvelope} />;
@@ -36,7 +23,6 @@ const ContactMe = () => {
           borderRadius: "25px",
           alignItems: "center",
           boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.4)",
-          animation: `${glow} 2s infinite alternate`,
           width: "50%",
           maxWidth: "300px",
         }}
@@ -59,7 +45,7 @@ const ContactMe = () => {
             rel="noopener noreferrer"
             className="card"
           >
-            <FontAwesomeIcon icon={faGithub} size="2x" color="#26A69A" />
+            <FontAwesomeIcon icon={faGithub} size="2x" color="#fffff" />
           </a>
           <a
             href="https://www.linkedin.com/in/kylepowis"
@@ -67,7 +53,7 @@ const ContactMe = () => {
             rel="noopener noreferrer"
             className="card"
           >
-            <FontAwesomeIcon icon={faLinkedinIn} size="2x" color="#26A69A" />
+            <FontAwesomeIcon icon={faLinkedinIn} size="2x" color="#ffffff" />
           </a>
         </Box>
       </Box>
