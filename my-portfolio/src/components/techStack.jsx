@@ -26,7 +26,7 @@ function TechStack() {
           alignItems: "center",
           boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.4)",
           flexDirection: "column",
-          animation: `${glow} 2s infinite alternate`,
+          // animation: `${glow} 2s infinite alternate`,
         }}
         className="w-60 p-3"
       >

@@ -40,11 +40,7 @@ function App() {
               component="div"
               sx={{ fontSize: "0.9rem" }}
             >
-              <span style={{ color: "#26A69A" }}>{"<"}</span>
-              <span style={{ color: "#26A69A" }}>Kyle </span>
-              <span style={{ color: "white" }}>Powis</span>
-              <span style={{ color: "#26A69A" }}>/</span>
-              <span style={{ color: "#26A69A" }}>{">"}</span>
+              <span style={{ color: "#FFFFFF" }}>{"<Kyle Powis/>"}</span>
             </Typography>
 
             <Box sx={{ flexGrow: 1 }} />
