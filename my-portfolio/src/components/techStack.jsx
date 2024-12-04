@@ -1,19 +1,18 @@
 // import * as React from "react";
 // import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import { keyframes } from "@emotion/react";
 
-const glow = keyframes`
-  0% {
-    box-shadow: 0 0 5px rgba(0, 255, 255, 0.2), 0 0 10px rgba(0, 255, 255, 0.2), 0 0 15px rgba(0, 255, 255, 0.2), 0 0 20px rgba(0, 255, 255, 0.2), 0 0 25px rgba(0, 255, 255, 0.2);
-  }
-  50% {
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2), 0 0 15px rgba(0, 255, 255, 0.2), 0 0 20px rgba(0, 255, 255, 0.2), 0 0 25px rgba(0, 255, 255, 0.2), 0 0 30px rgba(0, 255, 255, 0.2);
-  }
-  100% {
-    box-shadow: 0 0 5px rgba(0, 255, 255, 0.2), 0 0 10px rgba(0, 255, 255, 0.2), 0 0 15px rgba(0, 255, 255, 0.2), 0 0 20px rgba(0, 255, 255, 0.2), 0 0 25px rgba(0, 255, 255, 0.2);
-  }
-`;
+// const glow = keyframes`
+//   0% {
+//     box-shadow: 0 0 5px rgba(0, 255, 255, 0.2), 0 0 10px rgba(0, 255, 255, 0.2), 0 0 15px rgba(0, 255, 255, 0.2), 0 0 20px rgba(0, 255, 255, 0.2), 0 0 25px rgba(0, 255, 255, 0.2);
+//   }
+//   50% {
+//     box-shadow: 0 0 10px rgba(0, 255, 255, 0.2), 0 0 15px rgba(0, 255, 255, 0.2), 0 0 20px rgba(0, 255, 255, 0.2), 0 0 25px rgba(0, 255, 255, 0.2), 0 0 30px rgba(0, 255, 255, 0.2);
+//   }
+//   100% {
+//     box-shadow: 0 0 5px rgba(0, 255, 255, 0.2), 0 0 10px rgba(0, 255, 255, 0.2), 0 0 15px rgba(0, 255, 255, 0.2), 0 0 20px rgba(0, 255, 255, 0.2), 0 0 25px rgba(0, 255, 255, 0.2);
+//   }
+// `;
 
 function TechStack() {
   return (

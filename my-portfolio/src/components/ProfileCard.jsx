@@ -12,21 +12,19 @@ function ProfileCard() {
   return (
     <div className="flex justify-center">
       <Box
-        width={"100vw"}
+        width={"30vw"}
         sx={{
-          color: "white",
           borderRadius: "35px",
           display: "flex",
-          alignItems: "center",
-
           flexDirection: "column",
           boxShadow: {
             xs: "0px 2px 4px rgba(0, 0, 0, 0.8)",
             sm: "none",
             md: "none",
           },
+          border: "4px solid grey", // Adds a grey border
         }}
-        className="h-30 flex justify-center items-center p-5 "
+        className="h-30 flex p-5"
       >
         <Avatar
           className="card"
@@ -34,7 +32,7 @@ function ProfileCard() {
           alt="Kai"
           style={{
             height: "auto",
-            width: "30vh",
+            width: "20vh",
             boxShadow: "0px 4px 9px rgba(0, 0, 0, 0.8)",
           }}
         />
@@ -42,20 +40,18 @@ function ProfileCard() {
           sx={{
             display: "flex",
             flexDirection: "column",
-            justifyContent: "center",
             paddingTop: "10px",
           }}
         >
           <Typography
             variant="h4"
             gutterBottom
-            sx={{ color: "#26A69A ", textAlign: "center", fontWeight: "bold" }}
+            sx={{ color: "#ffffff", textAlign: "right", fontWeight: "bold" }}
           >
             Kyle Powis
           </Typography>
-          <Typography variant="body1" sx={{ textAlign: "center" }}>
-            Passionate Full Stack Developer, dedicated creator, relentless in
-            pursuit of excellence.
+          <Typography variant="body1" sx={{ textAlign: "right" }}>
+            Full Stack Developer
           </Typography>
           <Box
             sx={{
@@ -70,8 +66,9 @@ function ProfileCard() {
               target="_blank"
               rel="noopener noreferrer"
               className="card"
+              style={{ marginLeft: "auto" }}
             >
-              <FontAwesomeIcon icon={faGithub} size="2x" color="#26A69A" />
+              <FontAwesomeIcon icon={faGithub} size="2x" color="#ffffff" />
             </a>
             <a
               href="https://www.linkedin.com/in/kylepowis"
@@ -79,7 +76,7 @@ function ProfileCard() {
               rel="noopener noreferrer"
               className="card"
             >
-              <FontAwesomeIcon icon={faLinkedinIn} size="2x" color="#26A69A" />
+              <FontAwesomeIcon icon={faLinkedinIn} size="2x" color="#ffffff" />
             </a>
           </Box>
         </Box>

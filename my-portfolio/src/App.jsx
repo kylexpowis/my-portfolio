@@ -51,7 +51,7 @@ function App() {
                 to="/"
                 component={Link}
                 onClick={handleHomeClick}
-                sx={{ color: "#26A69A" }}
+                sx={{ color: "white" }}
               >
                 Home
               </Button>
@@ -59,7 +59,7 @@ function App() {
                 <>
                   <Button
                     color="inherit"
-                    sx={{ color: "#26A69A", justifyContent: "flex-end" }}
+                    sx={{ color: "white", justifyContent: "flex-end" }}
                   >
                     <Scroll
                       to="aboutme"
@@ -72,7 +72,7 @@ function App() {
                   </Button>
                   <Button
                     color="inherit"
-                    sx={{ color: "#26A69A", justifyContent: "flex-end" }}
+                    sx={{ color: "white", justifyContent: "flex-end" }}
                   >
                     <Scroll
                       to="FeaturedProjects"
@@ -87,7 +87,7 @@ function App() {
               )}
               <Button
                 color="inherit"
-                sx={{ color: "#26A69A" }}
+                sx={{ color: "white" }}
                 href={kylepowiscv}
                 rel="noopener noreferrer"
                 target="_blank"
