@@ -5,32 +5,30 @@ import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import "../../src/styles.css";
 import { Avatar } from "@mui/material";
 
-import kaibape from "../assets/kaibapeAIxpand.png";
+import kaibrooklyn from "../assets/kaibrooklynzoom.jpeg";
 
 function ProfileCard() {
   return (
-    <div className="flex justify-center">
+    <div className="">
       <Box
         sx={{
-      
           display: "flex",
-          justifyContent: "center",
           alignItems: "center",
-          padding: "20px",
           color: "white",
         }}
         className="h-30 flex p-5"
       >
         <Avatar
           className="card"
-          src={kaibape}
+          src={kaibrooklyn}
           alt="Kai"
           sx={{
             height: "auto",
-            width: "15vh",
+            width: "170px",
             boxShadow: "0px 4px 9px rgba(0, 0, 0, 0.8)",
           }}
         />
+
         <Box
           sx={{
             flexDirection: "column",

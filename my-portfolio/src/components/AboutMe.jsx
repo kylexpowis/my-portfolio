@@ -20,15 +20,13 @@ const AboutMe = () => {
     >
       {/* Title */}
       <Typography
-        variant="h5"
+        variant="h7"
         sx={{
           color: "#ffffff",
-          fontWeight: "bold",
-          fontFamily:
-            "'San Francisco', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', sans-serif",
+          
         }}
       >
-        My about me text here
+        Software Developer & Music Producer with a passion for innovation and tech
       </Typography>
 
       {/* Optional ContactMe component */}

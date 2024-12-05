@@ -57,7 +57,7 @@ function Home() {
     >
       <Grid
         container
-        spacing={4}
+        spacing={1}
         justifyContent="center"
         alignItems="flex-start"
         sx={{ flexWrap: "wrap" }}
@@ -69,8 +69,9 @@ function Home() {
               sx={{
                 backgroundColor: "#000",
                 borderRadius: "15px",
-                padding: "20px",
                 boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
+                width: "400px",
+                height: "250px",
               }}
             >
               <ProfileCard />
@@ -136,6 +137,8 @@ function Home() {
                 backgroundColor: "#000",
                 borderRadius: "15px",
                 padding: "20px",
+                width: "200px",
+                marginTop: "5px",
                 boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
                 color: "#fff",
               }}
