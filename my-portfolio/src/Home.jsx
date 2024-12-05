@@ -96,104 +96,104 @@ function Home() {
 
         {/* About Box (Small Square) */}
         <Grid item xs={12} sm="auto">
-          <Box
-            sx={{
-              backgroundColor: "#000",
-              borderRadius: "15px",
-              padding: "20px",
-              boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
-              color: "#fff",
-              cursor: "pointer",
-              textAlign: "center",
-              width: "200px",
-              height: "200px",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              flexDirection: "column",
-            }}
-            onClick={toggleAbout}
-          >
-            <Typography
-              variant="h5"
+          <animated.div style={aboutMeAnimation}>
+            <Box
               sx={{
+                backgroundColor: "#000",
+                borderRadius: "15px",
+                padding: "20px",
+                boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
                 color: "#fff",
-                fontWeight: "bold",
-                fontFamily:
-                  "'San Francisco', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', sans-serif",
+                cursor: "pointer",
+                textAlign: "center",
+                width: "200px",
+                height: "200px",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column",
               }}
+              onClick={toggleAbout}
             >
-              About
-            </Typography>
-          </Box>
+              <Typography
+                variant="h5"
+                sx={{
+                  color: "#fff",
+                  fontWeight: "bold",
+                  fontFamily:
+                    "'San Francisco', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', sans-serif",
+                }}
+              >
+                About
+              </Typography>
+            </Box>
+          </animated.div>
 
           {/* About Me Dropdown */}
           <Collapse in={isAboutOpen}>
-            <animated.div style={aboutMeAnimation}>
-              <Box
-                sx={{
-                  backgroundColor: "#000",
-                  borderRadius: "15px",
-                  padding: "20px",
-                  boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
-                  color: "#fff",
-                }}
-              >
-                <AboutMe />
-              </Box>
-            </animated.div>
+            <Box
+              sx={{
+                backgroundColor: "#000",
+                borderRadius: "15px",
+                padding: "20px",
+                boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
+                color: "#fff",
+              }}
+            >
+              <AboutMe />
+            </Box>
           </Collapse>
         </Grid>
 
         {/* Projects Box (Small Square) */}
         <Grid item xs={12} sm="auto">
-          <Box
-            sx={{
-              backgroundColor: "#000",
-              borderRadius: "15px",
-              padding: "20px",
-              boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
-              color: "#fff",
-              cursor: "pointer",
-              textAlign: "center",
-              width: "200px",
-              height: "200px",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              flexDirection: "column",
-            }}
-            onClick={toggleProjects}
-          >
-            <Typography
-              variant="h5"
+          <animated.div style={featuredProjectsAnimation}>
+            <Box
               sx={{
+                backgroundColor: "#000",
+                borderRadius: "15px",
+                padding: "20px",
+                boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
                 color: "#fff",
-                fontWeight: "bold",
-                fontFamily:
-                  "'San Francisco', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', sans-serif",
+                cursor: "pointer",
+                textAlign: "center",
+                width: "200px",
+                height: "200px",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column",
               }}
+              onClick={toggleProjects}
             >
-              Projects
-            </Typography>
-          </Box>
+              <Typography
+                variant="h5"
+                sx={{
+                  color: "#fff",
+                  fontWeight: "bold",
+                  fontFamily:
+                    "'San Francisco', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', sans-serif",
+                }}
+              >
+                Projects
+              </Typography>
+            </Box>
+          </animated.div>
 
           {/* Featured Projects Dropdown */}
           <Collapse in={isProjectsOpen}>
-            <animated.div style={featuredProjectsAnimation}>
-              <Box
-                sx={{
-                  backgroundColor: "#000",
-                  borderRadius: "15px",
-                  color: "#fff",
-                  boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
-                  marginTop: "5px",
-                  width: "200px",
-                }}
-              >
-                <FeaturedProjects />
-              </Box>
-            </animated.div>
+            <Box
+              sx={{
+                backgroundColor: "#000",
+                borderRadius: "15px",
+                color: "#fff",
+                boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
+                marginTop: "5px",
+                width: "200px",
+              }}
+            >
+              <FeaturedProjects />
+            </Box>
           </Collapse>
         </Grid>
       </Grid>
