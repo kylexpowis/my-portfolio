@@ -86,8 +86,11 @@ function Home() {
               sx={{
                 backgroundColor: "#000",
                 borderRadius: "15px",
-                padding: "20px",
+                padding: "20px", // Adjust as necessary, or replace with margin if padding isn't needed
                 boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
+                display: "inline-block", // Prevent the box from stretching to fill the grid
+                width: "fit-content", // Ensures it wraps tightly around the content
+                maxWidth: "100%", // Prevents it from overflowing on smaller screens
               }}
             >
               <TechStack />
@@ -107,8 +110,8 @@ function Home() {
                 color: "#fff",
                 cursor: "pointer",
                 textAlign: "center",
-                width: "200px",
-                height: "200px",
+                width: "180px",
+                height: "180px",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
@@ -137,7 +140,7 @@ function Home() {
                 backgroundColor: "#000",
                 borderRadius: "15px",
                 padding: "20px",
-                width: "200px",
+                width: "180px",
                 marginTop: "5px",
                 boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
                 color: "#fff",
@@ -160,14 +163,13 @@ function Home() {
                 color: "#fff",
                 cursor: "pointer",
                 textAlign: "center",
-                width: "200px",
-                height: "200px",
+                width: "180px",
+                height: "180px",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
                 flexDirection: "column",
               }}
-              // onClick={toggleProjects}
             >
               <Typography
                 variant="h5"
@@ -182,22 +184,6 @@ function Home() {
               </Typography>
             </Box>
           </animated.div>
-
-          {/* Featured Projects Dropdown */}
-          <Collapse in={isProjectsOpen}>
-            <Box
-              sx={{
-                backgroundColor: "#000",
-                borderRadius: "15px",
-                color: "#fff",
-                boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
-                marginTop: "5px",
-                width: "200px",
-              }}
-            >
-              <FeaturedProjects />
-            </Box>
-          </Collapse>
         </Grid>
 
         {/* Projects Box (Small Square) */}
