@@ -2,7 +2,7 @@
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import ContactMe from "./ContactMe";
-import kaidublin from "../assets/kaidublincropped.png";
+// import kaidublin from "../assets/kaidublincropped.png";
 
 const AboutMe = () => {
   return (
@@ -27,7 +27,7 @@ const AboutMe = () => {
           alignItems: "center",
         }}
       >
-        <img
+        {/* <img
           style={{
             maxHeight: "30vh",
             md: "20vh",
@@ -37,7 +37,7 @@ const AboutMe = () => {
           }}
           src={kaidublin}
           alt="Kaidublin"
-        />
+        /> */}
         <Box
           sx={{
             color: "white",

@@ -7,7 +7,7 @@ import { useSpring, animated } from "@react-spring/web";
 
 function Home() {
   const profileCardAnimation = useSpring({
-    from: { opacity: 0, transform: "translateY(50px)" },
+    from: { opacity: 0, transform: "translateY(-50px)" },
     to: { opacity: 1, transform: "translateY(0)" },
     config: { duration: 1000 },
   });
@@ -19,71 +19,93 @@ function Home() {
     delay: 300,
   });
 
+  const aboutMeAnimation = useSpring({
+    from: { opacity: 0, transform: "translateX(-50px)" },
+    to: { opacity: 1, transform: "translateX(0)" },
+    config: { duration: 1000 },
+    delay: 600,
+  });
+
+  const featuredProjectsAnimation = useSpring({
+    from: { opacity: 0, transform: "translateX(50px)" },
+    to: { opacity: 1, transform: "translateX(0)" },
+    config: { duration: 1000 },
+    delay: 900,
+  });
+
   return (
-    <>
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          textAlign: "center",
-          flexDirection: { xs: "column", md: "row" },
-        }}
-      >
+    <Box
+      sx={{
+        display: "flex",
+        flexWrap: "wrap",
+        justifyContent: "center",
+        gap: "20px",
+        padding: { xs: "20px", sm: "40px", md: "60px" },
+        backgroundColor: "#080808", 
+      }}
+    >
+      {/* Profile Card */}
+      <animated.div style={profileCardAnimation}>
         <Box
           sx={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            height: "100%",
-            textAlign: "center",
-            marginBottom: { xs: "20px", md: "0" },
+            display: "inline-block",
+            backgroundColor: "#000",
+            borderRadius: "15px",
+            padding: "20px",
+            boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
           }}
         >
-          <Box sx={{ marginTop: "-50px" }}>
-            <animated.div style={profileCardAnimation}>
-              <ProfileCard />
-            </animated.div>
-          </Box>
-          <Box sx={{ paddingTop: "30px" }}>
-            <animated.div style={techStackAnimation}>
-              <TechStack />
-            </animated.div>
-          </Box>
+          <ProfileCard />
         </Box>
-      </Box>
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "left",
-          justifyContent: "center",
-          height: "100%",
-          textAlign: "right",
-          marginBottom: { xs: "20px", md: "0" },
-        }}
-      >
-        <div id="aboutme">
+      </animated.div>
+
+      {/* Tech Stack */}
+      <animated.div style={techStackAnimation}>
+        <Box
+          sx={{
+            display: "inline-block",
+            backgroundColor: "#000",
+            borderRadius: "15px",
+            padding: "20px",
+            boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
+          }}
+        >
+          <TechStack />
+        </Box>
+      </animated.div>
+
+      {/* About Me */}
+      <animated.div style={aboutMeAnimation}>
+        <Box
+          sx={{
+            display: "inline-block",
+            backgroundColor: "#000",
+            borderRadius: "15px",
+            padding: "20px",
+            color: "#fff",
+            boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
+          }}
+        >
           <AboutMe />
-        </div>
+        </Box>
+      </animated.div>
+
+      {/* Featured Projects */}
+      <animated.div style={featuredProjectsAnimation}>
         <Box
           sx={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            height: "100%",
-            textAlign: "center",
-            marginBottom: { xs: "20px", md: "0" },
+            display: "inline-block",
+            backgroundColor: "#000",
+            borderRadius: "15px",
+            padding: "20px",
+            color: "#fff",
+            boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
           }}
         >
-          <div id="FeaturedProjects">
-            <FeaturedProjects />
-          </div>
+          <FeaturedProjects />
         </Box>
-      </Box>
-    </>
+      </animated.div>
+    </Box>
   );
 }
 

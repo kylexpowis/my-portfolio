@@ -11,19 +11,13 @@ function ProfileCard() {
   return (
     <div className="flex justify-center">
       <Box
-        width={"20vw"}
-        height={"30vh"}
         sx={{
           borderRadius: "15px",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)", // Light shadow for depth
-          backdropFilter: "blur(10px)", // Frosted glass effect (blurred background)
           padding: "20px",
           color: "white",
-          background: "rgba(28,28,28, 0.1)", // Slight transparency (keep low for true glass effect)
-          overflow: "hidden",
         }}
         className="h-30 flex p-5"
       >
@@ -33,15 +27,12 @@ function ProfileCard() {
           alt="Kai"
           sx={{
             height: "auto",
-            width: "20vh",
+            width: "15vh",
             boxShadow: "0px 4px 9px rgba(0, 0, 0, 0.8)",
-            borderRadius: "50%",
-            marginBottom: "60px",
           }}
         />
         <Box
           sx={{
-            display: "flex",
             flexDirection: "column",
             textAlign: "right",
             width: "100%",
@@ -57,13 +48,17 @@ function ProfileCard() {
               marginBottom: "5px",
               fontFamily:
                 "'San Francisco', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', sans-serif",
+              fontSize: { xs: "16px", sm: "18px", md: "24px" },
             }}
           >
             Kyle Powis
           </Typography>
           <Typography
             variant="body1"
-            sx={{ color: "rgba(255, 255, 255, 0.7)" }}
+            sx={{
+              color: "rgba(255, 255, 255, 0.7)",
+              fontSize: { xs: "12px", sm: "14px", md: "16px" },
+            }}
           >
             Full Stack Developer
           </Typography>
