@@ -55,23 +55,16 @@ function Home() {
         minHeight: "100vh",
       }}
     >
-      <Grid
-        container
-        spacing={1}
-        justifyContent="center"
-        alignItems="flex-start"
-        sx={{ flexWrap: "wrap" }}
-      >
+      <Grid container spacing={1} justifyContent="space-between">
         {/* Profile Card */}
-        <Grid item xs={12} sm="auto">
+        <Grid item xs={12} md={4}>
           <animated.div style={profileCardAnimation}>
             <Box
               sx={{
                 backgroundColor: "#000",
                 borderRadius: "15px",
                 boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
-                width: "400px",
-                height: "250px",
+                width: "100%",
               }}
             >
               <ProfileCard />
@@ -80,7 +73,7 @@ function Home() {
         </Grid>
 
         {/* Tech Stack */}
-        <Grid item xs={12} sm="auto">
+        <Grid item xs={12} md={4}>
           <animated.div style={techStackAnimation}>
             <Box
               sx={{
@@ -96,7 +89,7 @@ function Home() {
         </Grid>
 
         {/* About Box (Small Square) */}
-        <Grid item xs={12} sm="auto">
+        <Grid item xs={12} md={4}>
           <animated.div style={aboutMeAnimation}>
             <Box
               sx={{
@@ -149,7 +142,7 @@ function Home() {
         </Grid>
 
         {/* Projects Box (Small Square) */}
-        <Grid item xs={12} sm="auto">
+        <Grid item xs={12} md={4}>
           <animated.div style={featuredProjectsAnimation}>
             <Box
               sx={{
