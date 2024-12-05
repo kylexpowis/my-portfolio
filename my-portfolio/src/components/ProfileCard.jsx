@@ -12,7 +12,7 @@ function ProfileCard() {
     <div className="flex justify-center">
       <Box
         sx={{
-          borderRadius: "15px",
+      
           display: "flex",
           justifyContent: "center",
           alignItems: "center",

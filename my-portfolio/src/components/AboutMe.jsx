@@ -1,80 +1,43 @@
-// import React from "react";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import ContactMe from "./ContactMe";
-// import kaidublin from "../assets/kaidublincropped.png";
 
 const AboutMe = () => {
   return (
-    <div
-      style={{
+    <Box
+      sx={{
+        display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        width: "100%",
-        height: "100%",
-        minHeight: "100vh",
-        margin: "0 auto",
-        display: "flex",
         flexDirection: "column",
+        backgroundColor: "#000",
+        borderRadius: "15px",
+        padding: "20px",
+        width: "auto",
+        color: "white",
+        textAlign: "center",
+        boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
       }}
     >
-      <Box
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          flexWrap: "wrap",
-          justifyContent: "center",
-          alignItems: "center",
+      {/* Title */}
+      <Typography
+        variant="h5"
+        sx={{
+          color: "#ffffff",
+          fontWeight: "bold",
+          fontFamily:
+            "'San Francisco', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', sans-serif",
         }}
       >
-        {/* <img
-          style={{
-            maxHeight: "30vh",
-            md: "20vh",
-            xs: "20vh",
-            borderRadius: "60px",
-            marginTop: "20px",
-          }}
-          src={kaidublin}
-          alt="Kaidublin"
-        /> */}
-        <Box
-          sx={{
-            color: "white",
-            padding: "20px",
-            display: "flex",
-            alignItems: "center",
-            width: "100%",
-            height: "auto",
-            flexDirection: "column",
-            maxWidth: "700px",
-          }}
-        >
-          <Typography
-            variant="h5"
-            sx={{
-              color: "#ffffff",
-              textAlign: { xs: "center", sm: "center", md: "center" },
-              fontWeight: "bold",
-              fontFamily:
-                "'San Francisco', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', sans-serif",
-            }}
-          >
-            About
-          </Typography>
-        </Box>
-        <Box
-          sx={{
-            textAlign: "center",
-            width: "100%",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <ContactMe />
-        </Box>
-      </Box>
-    </div>
+        About
+      </Typography>
+
+      {/* Optional ContactMe component */}
+      <Box
+        sx={{
+          marginTop: "10px",
+        }}
+      ></Box>
+    </Box>
   );
 };
 

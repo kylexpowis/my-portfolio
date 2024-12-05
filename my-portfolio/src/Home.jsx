@@ -1,11 +1,21 @@
+import { useState } from "react";
 import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid";
 import TechStack from "./components/techStack";
 import ProfileCard from "./components/ProfileCard";
 import AboutMe from "./components/AboutMe";
 import FeaturedProjects from "./components/featuredprojects";
+import Typography from "@mui/material/Typography";
+import Collapse from "@mui/material/Collapse";
 import { useSpring, animated } from "@react-spring/web";
 
 function Home() {
+  const [isProjectsOpen, setIsProjectsOpen] = useState(false);
+
+  const toggleProjects = () => {
+    setIsProjectsOpen((prevState) => !prevState);
+  };
+
   const profileCardAnimation = useSpring({
     from: { opacity: 0, transform: "translateY(-50px)" },
     to: { opacity: 1, transform: "translateY(0)" },
@@ -27,8 +37,8 @@ function Home() {
   });
 
   const featuredProjectsAnimation = useSpring({
-    from: { opacity: 0, transform: "translateX(50px)" },
-    to: { opacity: 1, transform: "translateX(0)" },
+    from: { opacity: 0, transform: "translateY(50px)" },
+    to: { opacity: 1, transform: "translateY(0)" },
     config: { duration: 1000 },
     delay: 900,
   });
@@ -36,75 +46,119 @@ function Home() {
   return (
     <Box
       sx={{
-        display: "flex",
-        flexWrap: "wrap",
-        justifyContent: "center",
-        gap: "20px",
         padding: { xs: "20px", sm: "40px", md: "60px" },
-        backgroundColor: "#080808", 
+        backgroundColor: "#080808",
+        minHeight: "100vh",
       }}
     >
-      {/* Profile Card */}
-      <animated.div style={profileCardAnimation}>
-        <Box
-          sx={{
-            display: "inline-block",
-            backgroundColor: "#000",
-            borderRadius: "15px",
-            padding: "20px",
-            boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
-          }}
-        >
-          <ProfileCard />
-        </Box>
-      </animated.div>
+      <Grid
+        container
+        spacing={4}
+        justifyContent="center"
+        alignItems="flex-start"
+        sx={{ flexWrap: "wrap" }}
+      >
+        {/* Profile Card */}
+        <Grid item xs={12} sm="auto">
+          <animated.div style={profileCardAnimation}>
+            <Box
+              sx={{
+                backgroundColor: "#000",
+                borderRadius: "15px",
+                padding: "20px",
+                boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
+              }}
+            >
+              <ProfileCard />
+            </Box>
+          </animated.div>
+        </Grid>
 
-      {/* Tech Stack */}
-      <animated.div style={techStackAnimation}>
-        <Box
-          sx={{
-            display: "inline-block",
-            backgroundColor: "#000",
-            borderRadius: "15px",
-            padding: "20px",
-            boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
-          }}
-        >
-          <TechStack />
-        </Box>
-      </animated.div>
+        {/* Tech Stack */}
+        <Grid item xs={12} sm="auto">
+          <animated.div style={techStackAnimation}>
+            <Box
+              sx={{
+                backgroundColor: "#000",
+                borderRadius: "15px",
+                padding: "20px",
+                boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
+              }}
+            >
+              <TechStack />
+            </Box>
+          </animated.div>
+        </Grid>
 
-      {/* About Me */}
-      <animated.div style={aboutMeAnimation}>
-        <Box
-          sx={{
-            display: "inline-block",
-            backgroundColor: "#000",
-            borderRadius: "15px",
-            padding: "20px",
-            color: "#fff",
-            boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
-          }}
-        >
-          <AboutMe />
-        </Box>
-      </animated.div>
+        {/* About Me */}
+        <Grid item xs={12} sm="auto">
+          <animated.div style={aboutMeAnimation}>
+            <Box
+              sx={{
+                backgroundColor: "#000",
+                borderRadius: "15px",
+                padding: "20px",
+                boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
+                color: "#fff",
+              }}
+            >
+              <AboutMe />
+            </Box>
+          </animated.div>
+        </Grid>
 
-      {/* Featured Projects */}
-      <animated.div style={featuredProjectsAnimation}>
-        <Box
-          sx={{
-            display: "inline-block",
-            backgroundColor: "#000",
-            borderRadius: "15px",
-            padding: "20px",
-            color: "#fff",
-            boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
-          }}
-        >
-          <FeaturedProjects />
-        </Box>
-      </animated.div>
+        {/* Projects Box (Small Square) */}
+        <Grid item xs={12} sm="auto">
+          <Box
+            sx={{
+              backgroundColor: "#000",
+              borderRadius: "15px",
+              padding: "20px",
+              boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
+              color: "#fff",
+              cursor: "pointer",
+              textAlign: "center",
+              width: "200px",
+              height: "200px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              flexDirection: "column",
+            }}
+            onClick={toggleProjects}
+          >
+            <Typography
+              variant="h5"
+              sx={{
+                color: "#fff",
+                fontWeight: "bold",
+                fontFamily:
+                  "'San Francisco', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', sans-serif",
+              }}
+            >
+              Projects
+            </Typography>
+          </Box>
+
+          {/* Featured Projects Dropdown */}
+          <Collapse in={isProjectsOpen}>
+            <animated.div style={featuredProjectsAnimation}>
+              <Box
+                sx={{
+                  backgroundColor: "#000",
+                  borderRadius: "15px",
+                  color: "#fff",
+                  boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
+                  marginTop: "5px",
+                  width: "200px",
+                }}
+              >
+                <FeaturedProjects />
+              </Box>
+            </animated.div>
+          </Collapse>
+        </Grid>
+      </Grid>
     </Box>
   );
 }
