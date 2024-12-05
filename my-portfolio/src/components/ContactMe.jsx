@@ -22,11 +22,9 @@ const ContactMe = () => {
           color: "white",
           borderRadius: "25px",
           alignItems: "center",
-          boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.4)",
           width: "50%",
           maxWidth: "300px",
         }}
-        className="w-60 p-3"
       >
         <Typography variant="body1">
           Contact me on kylepowis@gmail.com
@@ -45,7 +43,7 @@ const ContactMe = () => {
             rel="noopener noreferrer"
             className="card"
           >
-            <FontAwesomeIcon icon={faGithub} size="2x" color="#fffff" />
+            <FontAwesomeIcon icon={faGithub} size="2x" color="#ffffff" />
           </a>
           <a
             href="https://www.linkedin.com/in/kylepowis"

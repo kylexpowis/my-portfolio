@@ -29,7 +29,7 @@ const AboutMe = () => {
       >
         <img
           style={{
-            maxHeight: "40vh",
+            maxHeight: "30vh",
             md: "20vh",
             xs: "20vh",
             borderRadius: "60px",
@@ -51,34 +51,16 @@ const AboutMe = () => {
           }}
         >
           <Typography
-            variant="body1"
+            variant="h5"
             sx={{
-              textAlign: "left",
-              maxHeight: "30vh",
-              fontSize: { xs: "0.8rem", sm: "1rem", md: "1rem" },
+              color: "#ffffff",
+              textAlign: { xs: "center", sm: "center", md: "center" },
+              fontWeight: "bold",
+              fontFamily:
+                "'San Francisco', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', sans-serif",
             }}
           >
-            <Typography
-              variant="h5"
-              sx={{
-                color: "#ffffff",
-                textAlign: { xs: "center", sm: "center", md: "left" },
-                fontWeight: "bold",
-                fontFamily:
-                  "'San Francisco', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', sans-serif",
-              }}
-            >
-              About Me
-            </Typography>
-            Having discovered a deep-rooted passion for software development, I
-            have used my experience during the Northcoders bootcamp to pivot my
-            career into the industry. Coding allows me to harness my innate
-            creativity and technical aptitude honed from my music production
-            experience to master programming languages and software development
-            methodologies. My past work experience has given me exceptional
-            people skills, allowing me to seamlessly adapt to various settings.
-            I am eager to contribute my diverse skill set, enthusiasm and
-            adaptability to a thriving software development team.
+            About
           </Typography>
         </Box>
         <Box

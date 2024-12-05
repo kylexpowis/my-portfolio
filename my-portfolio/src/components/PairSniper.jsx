@@ -93,7 +93,6 @@ function PairSniper() {
             <Typography
               variant="h5"
               sx={{
-                color: "#26A69A",
                 textAlign: { xs: "center", sm: "center", md: "left" },
                 fontWeight: "bold",
                 fontSize: { xs: "1rem", sm: "1rem", md: "1rem" },
@@ -129,7 +128,6 @@ function PairSniper() {
             <Typography
               variant="h5"
               sx={{
-                color: "#26A69A",
                 textAlign: { xs: "center", sm: "center", md: "left" },
                 fontWeight: "bold",
                 fontSize: { xs: "1rem", sm: "1rem", md: "1rem" },
@@ -160,7 +158,6 @@ function PairSniper() {
               <Typography
                 variant="h5"
                 sx={{
-                  color: "#26A69A",
                   textAlign: { xs: "center", sm: "center", md: "left" },
                   fontWeight: "bold",
                   fontSize: { xs: "1rem", sm: "1rem", md: "1rem" },
@@ -213,7 +210,6 @@ function PairSniper() {
               <Typography
                 variant="h5"
                 sx={{
-                  color: "#26A69A",
                   textAlign: { xs: "center", sm: "center", md: "left" },
                   fontWeight: "bold",
                   fontSize: { xs: "1rem", sm: "1rem", md: "1rem" },
@@ -233,7 +229,6 @@ function PairSniper() {
               <Typography
                 variant="h5"
                 sx={{
-                  color: "#26A69A",
                   textAlign: { xs: "center", sm: "center", md: "left" },
                   fontWeight: "bold",
                   fontSize: { xs: "1rem", sm: "1rem", md: "1rem" },
@@ -261,7 +256,6 @@ function PairSniper() {
                 <Typography
                   variant="h5"
                   sx={{
-                    color: "#26A69A",
                     textAlign: { xs: "center", sm: "center", md: "left" },
                     fontWeight: "bold",
                     fontSize: { xs: "1rem", sm: "1rem", md: "1rem" },
@@ -303,7 +297,6 @@ function PairSniper() {
               <Typography
                 variant="h5"
                 sx={{
-                  color: "#26A69A",
                   textAlign: { xs: "center", sm: "center", md: "left" },
                   fontWeight: "bold",
                   fontSize: { xs: "1rem", sm: "1rem", md: "1rem" },
@@ -378,7 +371,6 @@ function PairSniper() {
               <Typography
                 variant="h5"
                 sx={{
-                  color: "#26A69A",
                   textAlign: { xs: "center", sm: "center", md: "left" },
                   fontWeight: "bold",
                   fontSize: { xs: "1rem", sm: "1rem", md: "1rem" },
@@ -415,7 +407,6 @@ function PairSniper() {
             <Typography
               variant="h5"
               sx={{
-                color: "#26A69A",
                 textAlign: { xs: "center", sm: "center", md: "left" },
                 fontWeight: "bold",
                 fontSize: { xs: "1rem", sm: "1rem", md: "1rem" },
@@ -458,7 +449,7 @@ function PairSniper() {
               rel="noopener noreferrer"
               className="card"
             >
-              <FontAwesomeIcon icon={faGithub} size="2x" color="#26A69A" />
+              <FontAwesomeIcon icon={faGithub} size="2x" />
             </a>
 
             <Box>
@@ -490,7 +481,7 @@ function PairSniper() {
                 marginLeft: "-20px",
               }}
             >
-              <FontAwesomeIcon icon={faGithub} size="2x" color="#26A69A" />
+              <FontAwesomeIcon icon={faGithub} size="2x" />
             </a>
           </Box>
         </Box>

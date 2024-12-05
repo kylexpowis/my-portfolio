@@ -50,13 +50,13 @@ function ProfileCard() {
           <Typography
             variant="h5"
             gutterBottom
-            
             sx={{
               color: "#ffffff",
               fontWeight: "bold",
               marginTop: "120px",
               marginBottom: "5px",
-              fontFamily: "'San Francisco', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', sans-serif",
+              fontFamily:
+                "'San Francisco', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', sans-serif",
             }}
           >
             Kyle Powis

@@ -24,7 +24,6 @@ function Home() {
       <Box
         sx={{
           display: "flex",
-          height: "100vh",
           justifyContent: "center",
           alignItems: "center",
           textAlign: "center",
@@ -68,7 +67,6 @@ function Home() {
         <div id="aboutme">
           <AboutMe />
         </div>
-
         <Box
           sx={{
             display: "flex",
