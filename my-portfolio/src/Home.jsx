@@ -47,6 +47,13 @@ function Home() {
     delay: 900,
   });
 
+  const ResumeCVAnimation = useSpring({
+    from: { opacity: 0, transform: "translateX(-50px)" },
+    to: { opacity: 1, transform: "translateX(0)" },
+    config: { duration: 1000 },
+    delay: 600,
+  });
+
   return (
     <Box
       sx={{
@@ -137,6 +144,58 @@ function Home() {
               }}
             >
               <AboutMe />
+            </Box>
+          </Collapse>
+        </Grid>
+
+        {/* CV Box (Small Square) */}
+        <Grid item xs={12} md={4}>
+          <animated.div style={ResumeCVAnimation}>
+            <Box
+              sx={{
+                backgroundColor: "#000",
+                borderRadius: "15px",
+                padding: "20px",
+                boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
+                color: "#fff",
+                cursor: "pointer",
+                textAlign: "center",
+                width: "200px",
+                height: "200px",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column",
+              }}
+              // onClick={toggleProjects}
+            >
+              <Typography
+                variant="h5"
+                sx={{
+                  color: "#fff",
+                  fontWeight: "bold",
+                  fontFamily:
+                    "'San Francisco', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', sans-serif",
+                }}
+              >
+                Resume/CV
+              </Typography>
+            </Box>
+          </animated.div>
+
+          {/* Featured Projects Dropdown */}
+          <Collapse in={isProjectsOpen}>
+            <Box
+              sx={{
+                backgroundColor: "#000",
+                borderRadius: "15px",
+                color: "#fff",
+                boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
+                marginTop: "5px",
+                width: "200px",
+              }}
+            >
+              <FeaturedProjects />
             </Box>
           </Collapse>
         </Grid>
