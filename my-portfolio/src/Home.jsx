@@ -11,9 +11,13 @@ import { useSpring, animated } from "@react-spring/web";
 
 function Home() {
   const [isProjectsOpen, setIsProjectsOpen] = useState(false);
+  const [isAboutOpen, setIsAboutOpen] = useState(false);
 
   const toggleProjects = () => {
     setIsProjectsOpen((prevState) => !prevState);
+  };
+  const toggleAbout = () => {
+    setIsAboutOpen((prevState) => !prevState);
   };
 
   const profileCardAnimation = useSpring({
@@ -90,21 +94,55 @@ function Home() {
           </animated.div>
         </Grid>
 
-        {/* About Me */}
+        {/* About Box (Small Square) */}
         <Grid item xs={12} sm="auto">
-          <animated.div style={aboutMeAnimation}>
-            <Box
+          <Box
+            sx={{
+              backgroundColor: "#000",
+              borderRadius: "15px",
+              padding: "20px",
+              boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
+              color: "#fff",
+              cursor: "pointer",
+              textAlign: "center",
+              width: "200px",
+              height: "200px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              flexDirection: "column",
+            }}
+            onClick={toggleAbout}
+          >
+            <Typography
+              variant="h5"
               sx={{
-                backgroundColor: "#000",
-                borderRadius: "15px",
-                padding: "20px",
-                boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
                 color: "#fff",
+                fontWeight: "bold",
+                fontFamily:
+                  "'San Francisco', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', sans-serif",
               }}
             >
-              <AboutMe />
-            </Box>
-          </animated.div>
+              About
+            </Typography>
+          </Box>
+
+          {/* About Me Dropdown */}
+          <Collapse in={isAboutOpen}>
+            <animated.div style={aboutMeAnimation}>
+              <Box
+                sx={{
+                  backgroundColor: "#000",
+                  borderRadius: "15px",
+                  padding: "20px",
+                  boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
+                  color: "#fff",
+                }}
+              >
+                <AboutMe />
+              </Box>
+            </animated.div>
+          </Collapse>
         </Grid>
 
         {/* Projects Box (Small Square) */}

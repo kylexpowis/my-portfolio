@@ -28,7 +28,7 @@ const AboutMe = () => {
             "'San Francisco', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', sans-serif",
         }}
       >
-        About
+        My about me text here
       </Typography>
 
       {/* Optional ContactMe component */}
