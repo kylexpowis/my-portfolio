@@ -8,6 +8,7 @@ import FeaturedProjects from "./components/featuredprojects";
 import Typography from "@mui/material/Typography";
 import Collapse from "@mui/material/Collapse";
 import { useSpring, animated } from "@react-spring/web";
+import kylepowiscv from "/KYLEPOWISCV2024May.pdf";
 
 function Home() {
   const [isProjectsOpen, setIsProjectsOpen] = useState(false);
@@ -58,7 +59,7 @@ function Home() {
     <Box
       sx={{
         padding: { xs: "20px", sm: "40px", md: "60px" },
-        backgroundColor: "#080808",
+        backgroundColor: "#000000",
         minHeight: "100vh",
       }}
     >
@@ -73,7 +74,8 @@ function Home() {
           <animated.div style={profileCardAnimation}>
             <Box
               sx={{
-                backgroundColor: "#000",
+                backgroundImage:
+                  "linear-gradient(to bottom right, #2c2c2c, #000 60%)",
                 borderRadius: "15px",
                 boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
                 width: "fit-content",
@@ -176,17 +178,24 @@ function Home() {
                 flexDirection: "column",
               }}
             >
-              <Typography
-                variant="h5"
-                sx={{
-                  color: "#fff",
-                  fontWeight: "bold",
-                  fontFamily:
-                    "'San Francisco', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', sans-serif",
-                }}
+              <a
+                href={kylepowiscv}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: "none" }}
               >
-                Resume/CV
-              </Typography>
+                <Typography
+                  variant="h5"
+                  sx={{
+                    color: "#fff",
+                    fontWeight: "bold",
+                    fontFamily:
+                      "'San Francisco', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', sans-serif",
+                  }}
+                >
+                  Resume/CV
+                </Typography>
+              </a>
             </Box>
           </animated.div>
         </Grid>
