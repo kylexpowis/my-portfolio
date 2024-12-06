@@ -135,6 +135,10 @@ function Home() {
                   fontWeight: "bold",
                   fontFamily:
                     "'San Francisco', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', sans-serif",
+                  background: "linear-gradient(to right, #d4d4d4, #6c6c6c)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  display: "inline-block",
                 }}
               >
                 About
@@ -194,6 +198,10 @@ function Home() {
                     fontWeight: "bold",
                     fontFamily:
                       "'San Francisco', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', sans-serif",
+                    background: "linear-gradient(to right, #d4d4d4, #6c6c6c)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    display: "inline-block",
                   }}
                 >
                   Resume/CV
@@ -232,6 +240,10 @@ function Home() {
                   fontWeight: "bold",
                   fontFamily:
                     "'San Francisco', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', sans-serif",
+                  background: "linear-gradient(to right, #d4d4d4, #6c6c6c)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  display: "inline-block",
                 }}
               >
                 Projects
