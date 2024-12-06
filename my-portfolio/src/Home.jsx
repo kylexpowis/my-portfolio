@@ -91,7 +91,8 @@ function Home() {
           <animated.div style={techStackAnimation}>
             <Box
               sx={{
-                backgroundColor: "#000",
+                backgroundImage:
+                  "linear-gradient(to bottom right, #2c2c2c, #000 60%)",
                 borderRadius: "15px",
                 padding: "20px",
                 boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
@@ -110,7 +111,8 @@ function Home() {
           <animated.div style={aboutMeAnimation}>
             <Box
               sx={{
-                backgroundColor: "#000",
+                backgroundImage:
+                  "linear-gradient(to bottom right, #2c2c2c, #000 60%)",
                 borderRadius: "15px",
                 padding: "20px",
                 boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
@@ -163,7 +165,8 @@ function Home() {
           <animated.div style={ResumeCVAnimation}>
             <Box
               sx={{
-                backgroundColor: "#000",
+                backgroundImage:
+                  "linear-gradient(to bottom right, #2c2c2c, #000 60%)",
                 borderRadius: "15px",
                 padding: "20px",
                 boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
@@ -205,7 +208,8 @@ function Home() {
           <animated.div style={featuredProjectsAnimation}>
             <Box
               sx={{
-                backgroundColor: "#000",
+                backgroundImage:
+                  "linear-gradient(to bottom right, #2c2c2c, #000 60%)",
                 borderRadius: "15px",
                 padding: "20px",
                 boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
