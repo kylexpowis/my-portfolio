@@ -62,16 +62,21 @@ function Home() {
         minHeight: "100vh",
       }}
     >
-      <Grid container spacing={1} justifyContent="space-between">
+      <Grid
+        container
+        spacing={2}
+        justifyContent="center"
+        alignItems="flex-start"
+      >
         {/* Profile Card */}
-        <Grid item xs={12} md={4}>
+        <Grid item xs={"auto"}>
           <animated.div style={profileCardAnimation}>
             <Box
               sx={{
                 backgroundColor: "#000",
                 borderRadius: "15px",
                 boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
-                width: "100%",
+                width: "fit-content",
               }}
             >
               <ProfileCard />
@@ -80,17 +85,17 @@ function Home() {
         </Grid>
 
         {/* Tech Stack */}
-        <Grid item xs={12} md={4}>
+        <Grid item xs="auto">
           <animated.div style={techStackAnimation}>
             <Box
               sx={{
                 backgroundColor: "#000",
                 borderRadius: "15px",
-                padding: "20px", // Adjust as necessary, or replace with margin if padding isn't needed
+                padding: "20px",
                 boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
-                display: "inline-block", // Prevent the box from stretching to fill the grid
-                width: "fit-content", // Ensures it wraps tightly around the content
-                maxWidth: "100%", // Prevents it from overflowing on smaller screens
+                display: "inline-block",
+                width: "fit-content",
+                maxWidth: "100%",
               }}
             >
               <TechStack />
@@ -198,8 +203,8 @@ function Home() {
                 color: "#fff",
                 cursor: "pointer",
                 textAlign: "center",
-                width: "200px",
-                height: "200px",
+                width: "180px",
+                height: "180px",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
@@ -230,7 +235,7 @@ function Home() {
                 color: "#fff",
                 boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
                 marginTop: "5px",
-                width: "200px",
+                width: "180px",
               }}
             >
               <FeaturedProjects />
