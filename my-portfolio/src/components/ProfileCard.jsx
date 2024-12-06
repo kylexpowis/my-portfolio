@@ -47,6 +47,10 @@ function ProfileCard() {
               fontFamily:
                 "'San Francisco', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', sans-serif",
               fontSize: { xs: "16px", sm: "18px", md: "24px" },
+              background: "linear-gradient(to right, #d4d4d4, #6c6c6c)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              display: "inline-block",
             }}
           >
             Kyle Powis
