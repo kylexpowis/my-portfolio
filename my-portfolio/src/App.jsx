@@ -15,6 +15,7 @@ import AboutMe from "./components/AboutMe";
 import PairSniper from "./components/PairSniper";
 import kylepowiscv from "/KYLEPOWISCV2024May.pdf";
 import StolenSociety from "./components/StolenSociety";
+import ParticleBackground from "./components/ParticleBackground";
 
 function App() {
   const location = useLocation();
@@ -29,6 +30,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
+      <ParticleBackground />
         <AppBar
           position="fixed"
           color="default"
@@ -40,11 +42,7 @@ function App() {
               component="div"
               sx={{ fontSize: "0.9rem" }}
             >
-              <span style={{ color: "#26A69A" }}>{"<"}</span>
-              <span style={{ color: "#26A69A" }}>Kyle </span>
-              <span style={{ color: "white" }}>Powis</span>
-              <span style={{ color: "#26A69A" }}>/</span>
-              <span style={{ color: "#26A69A" }}>{">"}</span>
+              <span style={{ color: "#FFFFFF" }}>{"<Kyle Powis/>"}</span>
             </Typography>
 
             <Box sx={{ flexGrow: 1 }} />
@@ -55,7 +53,7 @@ function App() {
                 to="/"
                 component={Link}
                 onClick={handleHomeClick}
-                sx={{ color: "#26A69A" }}
+                sx={{ color: "#FFFFFF" }}
               >
                 Home
               </Button>
@@ -63,7 +61,7 @@ function App() {
                 <>
                   <Button
                     color="inherit"
-                    sx={{ color: "#26A69A", justifyContent: "flex-end" }}
+                    sx={{ color: "#FFFFFF", justifyContent: "flex-end" }}
                   >
                     <Scroll
                       to="aboutme"
@@ -76,7 +74,7 @@ function App() {
                   </Button>
                   <Button
                     color="inherit"
-                    sx={{ color: "#26A69A", justifyContent: "flex-end" }}
+                    sx={{ color: "#FFFFFF", justifyContent: "flex-end" }}
                   >
                     <Scroll
                       to="FeaturedProjects"
@@ -91,7 +89,7 @@ function App() {
               )}
               <Button
                 color="inherit"
-                sx={{ color: "#26A69A" }}
+                sx={{ color: "#FFFFFF" }}
                 href={kylepowiscv}
                 rel="noopener noreferrer"
                 target="_blank"

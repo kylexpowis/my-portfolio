@@ -6,7 +6,8 @@ import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import "../../src/styles.css";
 import { Avatar } from "@mui/material";
 
-import kaibape from "../assets/kaibapeAIxpand.png";
+// import kaibape from "../assets/kaibapeAIxpand.png";
+import kylepaphos from "../assets/kylepaphos.png";
 
 function ProfileCard() {
   return (
@@ -18,7 +19,6 @@ function ProfileCard() {
           borderRadius: "35px",
           display: "flex",
           alignItems: "center",
-
           flexDirection: "column",
           boxShadow: {
             xs: "0px 2px 4px rgba(0, 0, 0, 0.8)",
@@ -30,7 +30,7 @@ function ProfileCard() {
       >
         <Avatar
           className="card"
-          src={kaibape}
+          src={kylepaphos}
           alt="Kai"
           style={{
             height: "auto",
@@ -49,13 +49,19 @@ function ProfileCard() {
           <Typography
             variant="h4"
             gutterBottom
-            sx={{ color: "#26A69A ", textAlign: "center", fontWeight: "bold" }}
+            sx={{
+              textAlign: "center",
+              fontWeight: "bold",
+              background: "linear-gradient(to top, #383838, white)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+            }}
           >
             Kyle Powis
           </Typography>
+
           <Typography variant="body1" sx={{ textAlign: "center" }}>
-            Passionate Full Stack Developer, dedicated creator, relentless in
-            pursuit of excellence.
+            Passionate Front End Developer
           </Typography>
           <Box
             sx={{
@@ -71,7 +77,7 @@ function ProfileCard() {
               rel="noopener noreferrer"
               className="card"
             >
-              <FontAwesomeIcon icon={faGithub} size="2x" color="#26A69A" />
+              <FontAwesomeIcon icon={faGithub} size="2x" />
             </a>
             <a
               href="https://www.linkedin.com/in/kylepowis"
@@ -79,7 +85,7 @@ function ProfileCard() {
               rel="noopener noreferrer"
               className="card"
             >
-              <FontAwesomeIcon icon={faLinkedinIn} size="2x" color="#26A69A" />
+              <FontAwesomeIcon icon={faLinkedinIn} size="2x" />
             </a>
           </Box>
         </Box>

@@ -61,7 +61,9 @@ const AboutMe = () => {
             <Typography
               variant="h5"
               sx={{
-                color: "#26A69A",
+                background: "linear-gradient(to top, #404040, white)",
+                WebkitBackgroundClip: "text",
+                color: "transparent",
                 textAlign: { xs: "center", sm: "center", md: "left" },
                 fontWeight: "bold",
               }}

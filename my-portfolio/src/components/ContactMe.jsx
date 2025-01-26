@@ -6,13 +6,13 @@ import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 const glow = keyframes`
   0% {
-    box-shadow: 0 0 5px rgba(0, 255, 255, 0.2), 0 0 10px rgba(0, 255, 255, 0.2), 0 0 15px rgba(0, 255, 255, 0.2), 0 0 20px rgba(0, 255, 255, 0.2), 0 0 25px rgba(0, 255, 255, 0.2);
+    box-shadow: 0 0 5px rgba(216, 216, 216, 0.2), 0 0 10px rgba(216, 216, 216, 0.2), 0 0 15px rgba(216, 216, 216, 0.2), 0 0 20px rgba(216, 216, 216, 0.2), 0 0 25px rgba(216, 216, 216, 0.2);
   }
   50% {
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2), 0 0 15px rgba(0, 255, 255, 0.2), 0 0 20px rgba(0, 255, 255, 0.2), 0 0 25px rgba(0, 255, 255, 0.2), 0 0 30px rgba(0, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(216, 216, 216, 0.2), 0 0 15px rgba(216, 216, 216, 0.2), 0 0 20px rgba(216, 216, 216, 0.2), 0 0 25px rgba(216, 216, 216, 0.2), 0 0 30px rgba(216, 216, 216, 0.2);
   }
   100% {
-    box-shadow: 0 0 5px rgba(0, 255, 255, 0.2), 0 0 10px rgba(0, 255, 255, 0.2), 0 0 15px rgba(0, 255, 255, 0.2), 0 0 20px rgba(0, 255, 255, 0.2), 0 0 25px rgba(0, 255, 255, 0.2);
+    box-shadow: 0 0 5px rgba(216, 216, 216, 0.2), 0 0 10px rgba(216, 216, 216, 0.2), 0 0 15px rgba(216, 216, 216, 0.2), 0 0 20px rgba(216, 216, 216, 0.2), 0 0 25px rgba(216, 216, 216, 0.2);
   }
 `;
 
@@ -59,7 +59,7 @@ const ContactMe = () => {
             rel="noopener noreferrer"
             className="card"
           >
-            <FontAwesomeIcon icon={faGithub} size="2x" color="#26A69A" />
+            <FontAwesomeIcon icon={faGithub} size="2x" />
           </a>
           <a
             href="https://www.linkedin.com/in/kylepowis"
@@ -67,7 +67,7 @@ const ContactMe = () => {
             rel="noopener noreferrer"
             className="card"
           >
-            <FontAwesomeIcon icon={faLinkedinIn} size="2x" color="#26A69A" />
+            <FontAwesomeIcon icon={faLinkedinIn} size="2x" />
           </a>
         </Box>
       </Box>
